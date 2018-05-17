@@ -1,2 +1,0 @@
-# BJDoc
-BJDoc
