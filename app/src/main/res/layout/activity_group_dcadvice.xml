@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* //device/apps/common/assets/res/layout/list_content.xml
+**
+** Copyright 2006, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    
+    <RelativeLayout
+        android:id="@+id/button_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true" 
+        >
+
+        <Button
+            android:id="@+id/common_but_cancle"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dip"
+            android:text="取消" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/common_but_clear"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:text="清空"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/common_but_ok"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:text="确认" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ListView android:id="@+id/group_dcadvice_listview"
+                android:layout_above="@id/button_bar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/preference_screen_header_padding_side"
+                android:paddingRight="@dimen/preference_screen_header_padding_side"
+                android:paddingTop="@dimen/preference_screen_header_vertical_padding"
+                android:paddingBottom="@dimen/preference_screen_header_vertical_padding"
+                android:clipToPadding="false"
+                android:scrollbarStyle="@integer/preference_screen_header_scrollbarStyle"
+                android:drawSelectorOnTop="false"
+                android:cacheColorHint="@android:color/transparent"
+                android:listPreferredItemHeight="48dp"
+                android:scrollbarAlwaysDrawVerticalTrack="true" 
+                style="@style/Widget.Holo.ListView"
+                />
+   <LinearLayout android:orientation="horizontal"
+                 android:id="@+id/group_progressbar"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_centerInParent="true"
+                 >
+       <ProgressBar 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+       />
+       <TextView 
+           android:text="载入中...."
+           android:textSize="20dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           />
+   </LinearLayout>
+   
+</RelativeLayout>

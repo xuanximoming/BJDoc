@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo"
+    android:stretchColumns="1">
+
+    <TableRow>
+        <TextView
+            android:gravity="right"
+            android:padding="3dip"
+            android:text="账号："
+            android:textSize="18dp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/login_username"
+            android:hint="请输入账号"
+            android:padding="3dip"
+            android:scrollHorizontally="true" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:gravity="right"
+            android:padding="3dip"
+            android:text="密码："
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/login_password"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:padding="3dip"
+            android:scrollHorizontally="true" />
+    </TableRow>
+    <TableRow
+        android:gravity="left"
+        android:padding="3dip">
+        <CheckBox
+            android:id="@+id/login_checkBox1"
+            android:text="记住密码"
+            android:textSize="18dp"/>
+    </TableRow>
+    <TableRow android:gravity="right">
+        <Button
+            android:id="@+id/login_cancel"
+            android:text="取消" />
+        <Button
+            android:id="@+id/login_ok"
+            android:text="登录" />
+        <Button
+            android:id="@+id/server_ip"
+            android:text="IP设置" />
+        <Button
+            android:id="@+id/auto_update"
+            android:text="版本更新" />
+    </TableRow>
+</TableLayout>

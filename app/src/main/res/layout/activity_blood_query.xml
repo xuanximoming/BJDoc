@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* //device/apps/common/assets/res/layout/list_content.xml
+**
+** Copyright 2006, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/common_title_fragment"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/preference_screen_side_margin"
+            android:layout_marginRight="@dimen/preference_screen_side_margin_negative"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" 
+                android:layout_marginLeft="20dp"
+                android:text="科 室："
+                android:textSize="25dp"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall" />
+
+           <Spinner android:id="@+id/blood_department"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" 
+                android:layout_marginLeft="20dp"
+                android:entries="@array/spinner_zi"
+            />
+           <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" 
+                android:layout_marginLeft="100dp"
+                android:text="开始时间："
+                android:textSize="25dp"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall" />
+            <Button android:id="@+id/start_time_but"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" 
+                android:layout_marginLeft="15dp"
+                android:text="选择时间"
+                android:visibility="visible"
+            />
+           <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" 
+                android:layout_marginLeft="20dp"
+                android:text="截止时间："
+                android:textSize="25dp"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall" />
+           <Button android:id="@+id/end_time_but"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" 
+                android:layout_marginLeft="15dp"
+                android:text="选择时间"
+                android:visibility="visible"
+            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" 
+                android:layout_marginLeft="20dp"
+                android:text="受血者："
+                android:textSize="25dp"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall" />
+            <LinearLayout
+				android:focusable="true"
+				android:focusableInTouchMode="true"
+				android:layout_width="0px"
+				android:layout_height="0px"/>
+            <EditText
+                android:id="@+id/blood_patient"
+                android:enabled="false"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" 
+                android:layout_marginLeft="20dp"
+                />
+          
+        </LinearLayout>
+        
+             
+        <include layout="@layout/activity_blood_list_item"   /> 
+     <LinearLayout
+            android:id="@+id/common_root_fragment"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:visibility="visible" >
+         <!--   <FrameLayout
+                android:id="@+id/main_right_frame"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:background="?android:attr/detailsElementBackground" >
+                  </FrameLayout>  
+-->
+               <ListView 
+                 android:id="@+id/blood_listview"
+                 android:layout_width="match_parent"
+                 android:layout_height="fill_parent"
+                 android:background="?android:attr/detailsElementBackground"/> 
+                
+    
+        </LinearLayout>
+       
+    </LinearLayout>
+
+    <RelativeLayout android:id="@+id/button_bar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_weight="0"
+        android:visibility="visible">
+
+        <Button android:id="@+id/common_but_cancle"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_alignParentLeft="true"
+            android:text="取消"
+        />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+
+            <Button android:id="@+id/common_but_ok"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:text="查询"
+            />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

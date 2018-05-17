@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+<LinearLayout 
+    android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" >
+   <LinearLayout 
+        android:layout_width="match_parent" 
+       android:layout_height="wrap_content" android:orientation="horizontal" >
+       <TextView
+           android:id="@+id/patient_infprmation" android:layout_width="match_parent" android:layout_height="wrap_content"
+           android:text="病人的基本信息:"  android:textSize="20dp" android:textColor="@+color/darkslateblue"
+           android:background="?android:attr/detailsElementBackground" />
+   </LinearLayout>
+   <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+        <!-- 第一块 -->
+        <LinearLayout  android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">      
+                <TextView
+                   android:text="入院病情:" android:textSize="18dp" android:layout_width="wrap_content"  android:layout_height="wrap_content" />
+               <CheckBox
+            		android:text="危重" android:id="@+id/inhospital_checkbox_rybingqing_1" android:textSize="18dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+               <CheckBox
+          		    android:text="一般"  android:id="@+id/inhospital_checkbox_rybingqing_2" android:textSize="18dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout  android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">      
+                <TextView android:layout_width="wrap_content"  android:layout_height="wrap_content"
+                   android:text="入院方式:"   android:textSize="18dp"/>
+               <CheckBox
+            		android:text="步行" android:id="@+id/inhospital_checkbox_method_1" android:textSize="18dp" android:layout_width="wrap_content"  android:layout_height="wrap_content" />
+               <CheckBox
+          		    android:text="轮椅" android:id="@+id/inhospital_checkbox_method_2" android:textSize="18dp" android:layout_width="wrap_content"  android:layout_height="wrap_content"/>
+               <CheckBox
+           		    android:text="平车" android:id="@+id/inhospital_checkbox_method_3" android:textSize="18dp" android:layout_width="wrap_content"  android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <!-- 第二块: 病史与主诉 -->
+        <LinearLayout  android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">      
+             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="病史与主诉:"  android:textSize="20dp"/>
+             <EditText android:id="@+id/inhospital_et_history" android:layout_width="match_parent" android:layout_height="wrap_content"   />
+        </LinearLayout>
+        <!-- 第三块 ：查体-->
+        <LinearLayout  android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">      
+             <TextView android:text="查体:" android:textColor="@+color/deepskyblue" android:layout_width="wrap_content" android:layout_height="wrap_content"    android:textSize="25dp"/>
+        </LinearLayout>
+        
+        <LinearLayout  android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">      
+             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="体温:"  android:textSize="20dp"/>
+             <EditText android:id="@+id/inhospital_et_temperature" android:inputType="numberDecimal"  android:layout_width="80dp" android:layout_height="wrap_content"  />
+             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="℃"  android:textSize="20dp" android:layout_weight="1"/>
+             
+             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="脉搏:"  android:textSize="20dp"/>
+             <EditText android:id="@+id/inhospital_et_maibo"  android:inputType="number" android:layout_width="100dp" android:layout_height="wrap_content"  />
+             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="次/分"  android:textSize="20dp" android:layout_weight="1"/>
+             
+             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="呼吸:"  android:textSize="20dp"/>
+             <EditText android:id="@+id/inhospital_et_breath" android:inputType="number" android:layout_width="100dp" android:layout_height="wrap_content"  />
+             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="次/分"  android:textSize="20dp" android:layout_weight="1"/>
+             
+             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="血压:"  android:textSize="20dp"/>
+             <EditText android:id="@+id/inhospital_et_xueya"  android:layout_width="100dp" android:layout_height="wrap_content"  />
+             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="mmHg"  android:textSize="20dp" android:layout_weight="1"/>
+        </LinearLayout>
+        
+        <LinearLayout  android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">      
+            <RadioGroup
+ 				android:layout_width="wrap_content"  android:layout_height="wrap_content"
+       		    android:orientation="horizontal"  android:checkedButton="@+id/lunch" android:gravity="center"
+                android:id="@+id/jingshen">
+                <TextView
+                   android:text="精神状态:"   style="@style/textlarge"/>
+               <RadioButton
+            		android:text="正常" android:id="@+id/inhospital_rbutton_jingshen_1"  style="@style/textlarge" />
+               <RadioButton
+          		    android:text="焦虑" android:id="@+id/inhospital_rbutton_jingshen_2" style="@style/textlarge" />
+               <RadioButton
+           		    android:text="紧张"  android:id="@+id/inhospital_rbutton_jingshen_3" style="@style/textlarge"/>
+               <RadioButton
+           		    android:text="恐惧"  android:id="@+id/inhospital_rbutton_jingshen_4" style="@style/textlarge"/>
+               <RadioButton
+           		    android:text="其他：" android:id="@+id/inhospital_rbutton_jingshen_5" style="@style/textlarge" />
+            </RadioGroup>
+            <EditText android:id="@+id/inhospital_et_jingshen_qita" android:layout_width="300dp" android:layout_height="wrap_content"  />
+        </LinearLayout>
+        
+        <LinearLayout  android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">      
+            <RadioGroup
+ 				android:layout_width="wrap_content"  android:layout_height="wrap_content"
+       		    android:orientation="horizontal"  android:checkedButton="@+id/lunch" android:gravity="center"
+                android:id="@+id/yishi">
+                <TextView
+                   android:text="意识情况:"   style="@style/textlarge"/>
+               <RadioButton
+            		android:text="清醒" android:id="@+id/inhospital_rbutton_yishi_1"  style="@style/textlarge" />
+               <RadioButton
+          		    android:text="嗜睡" android:id="@+id/inhospital_rbutton_yishi_2" style="@style/textlarge" />
+               <RadioButton
+           		    android:text="昏睡"  android:id="@+id/inhospital_rbutton_yishi_3" style="@style/textlarge"/>
+               <RadioButton
+           		    android:text="昏迷"  android:id="@+id/inhospital_rbutton_yishi_4" style="@style/textlarge"/>
+               <RadioButton
+           		    android:text="其他：" android:id="@+id/inhospital_rbutton_yishi_5" style="@style/textlarge" />
+            </RadioGroup>
+            <EditText android:id="@+id/inhospital_et_yishi_qita" android:layout_width="300dp" android:layout_height="wrap_content"  />
+        </LinearLayout>
+        
+        <LinearLayout  android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">  
+             <RadioGroup
+ 				android:layout_width="wrap_content"  android:layout_height="wrap_content"
+       		    android:orientation="horizontal"  android:checkedButton="@+id/lunch" android:gravity="center"
+                android:id="@+id/eyeproblem" >
+                <TextView
+                   android:text="视力障碍:"   style="@style/textlarge"/>
+               <RadioButton
+            		android:text="无" android:id="@+id/inhospital_rbutton_eyeproblem_1"  style="@style/textlarge" />
+               <RadioButton
+          		    android:text="有"  android:id="@+id/inhospital_rbutton_eyeproblem_2" style="@style/textlarge" />
+              </RadioGroup>
+            <TextView android:text="描述:" android:layout_marginLeft="50dp" android:layout_width="wrap_content" android:layout_height="wrap_content"   android:textSize="20dp"/>  
+            <EditText android:id="@+id/inhospital_et_eyeproblem_qita" android:layout_width="300dp" android:layout_height="wrap_content"  />
+        </LinearLayout>
+        
+        <LinearLayout  android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">  
+             <RadioGroup
+ 				android:layout_width="wrap_content"  android:layout_height="wrap_content"
+       		    android:orientation="horizontal"  android:checkedButton="@+id/lunch" android:gravity="center"
+                android:id="@+id/earproblem" >
+                <TextView
+                   android:text="听力障碍:"   style="@style/textlarge"/>
+               <RadioButton
+            		android:text="无" android:id="@+id/inhospital_rbutton_earproblem_1"  style="@style/textlarge" />
+               <RadioButton
+          		    android:text="有" android:id="@+id/inhospital_rbutton_earproblem_2" style="@style/textlarge"/>
+              </RadioGroup>
+            <TextView android:text="描述:" android:layout_marginLeft="50dp" android:layout_width="wrap_content" android:layout_height="wrap_content"   android:textSize="20dp"/>  
+            <EditText android:id="@+id/inhospital_et_earproblem_qita" android:layout_width="300dp" android:layout_height="wrap_content"  />
+        </LinearLayout>
+        <LinearLayout  android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">      
+            <RadioGroup
+ 				android:layout_width="wrap_content"  android:layout_height="wrap_content"
+       		    android:orientation="horizontal"  android:checkedButton="@+id/lunch" android:gravity="center"
+                android:id="@+id/language">
+                <TextView
+                   android:text="语言能力:"   style="@style/textlarge"/>
+               <RadioButton
+            		android:text="正常" style="@style/textlarge" android:id="@+id/inhospital_rbutton_language_1"   />
+               <RadioButton
+          		    android:text="含糊不清" style="@style/textlarge" android:id="@+id/inhospital_rbutton_language_2" />
+               <RadioButton
+           		    android:text="失语" style="@style/textlarge" android:id="@+id/inhospital_rbutton_language_3" />
+               <RadioButton
+           		    android:text="其他：" style="@style/textlarge" android:id="@+id/inhospital_rbutton_language_4" />
+            </RadioGroup>
+            <EditText android:id="@+id/inhospital_et_language_qita" android:layout_width="300dp" android:layout_height="wrap_content"  />
+        </LinearLayout>
+        <LinearLayout  android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">      
+            <RadioGroup
+ 				android:layout_width="wrap_content"  android:layout_height="wrap_content"
+       		    android:orientation="horizontal"  android:checkedButton="@+id/lunch" android:gravity="center"
+                android:id="@+id/active">
+                <TextView
+                   android:text="活动形态:"   style="@style/textlarge"/>
+               <RadioButton
+            		android:text="完全自理" style="@style/textlarge" android:id="@+id/inhospital_rbutton_active_1"   />
+               <RadioButton
+          		    android:text="部分自理" style="@style/textlarge" android:id="@+id/inhospital_rbutton_active_2" />
+               <RadioButton
+           		    android:text="卧床" style="@style/textlarge" android:id="@+id/inhospital_rbutton_active_3" />
+               <RadioButton
+           		    android:text="其他：" style="@style/textlarge" android:id="@+id/inhospital_rbutton_active_4" />
+            </RadioGroup>
+            <EditText android:id="@+id/inhospital_et_active_qita" android:layout_width="300dp" android:layout_height="wrap_content"  />
+        </LinearLayout>
+        <LinearLayout  android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">      
+             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="家庭社会情况:"  android:textSize="20dp"/>
+             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="职业"  android:textSize="20dp"/>
+             <EditText android:id="@+id/inhospital_et_works" android:layout_weight="0.5" android:layout_width="100dp" android:layout_height="wrap_content"   />
+            
+             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="文化程度"  android:textSize="20dp"/>
+             <Spinner 
+                android:id="@+id/inhospital_spinner_cultural" android:layout_width="wrap_content"  android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall" android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                android:entries="@array/spinner_cultural" android:layout_weight="1"/>
+             
+             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="婚姻状况"  android:textSize="20dp"/>
+             <Spinner 
+                android:id="@+id/inhospital_spinner_hunyin" android:layout_width="wrap_content"  android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall" android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                android:entries="@array/spinner_hunyin" android:layout_weight="1"/>
+             
+             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="子女"  android:textSize="20dp"/>
+              <Spinner 
+                android:id="@+id/inhospital_spinner_children" android:layout_width="wrap_content"  android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall" android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                android:entries="@array/spinner_children" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout  android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">  
+             <RadioGroup
+ 				android:layout_width="wrap_content"  android:layout_height="wrap_content"
+       		    android:orientation="horizontal"  android:checkedButton="@+id/lunch" android:gravity="center"
+                android:id="@+id/xiyan" >
+                <TextView
+                   android:text="生活习惯: 吸烟"   style="@style/textlarge"/>
+               <RadioButton
+            		android:text="无" android:id="@+id/inhospital_rbutton_xiyan_1"  style="@style/textlarge" />
+               <RadioButton
+          		    android:text="有" android:id="@+id/inhospital_rbutton_xiyan_2" style="@style/textlarge"/>
+              </RadioGroup>
+              <RadioGroup
+ 				android:layout_width="wrap_content"  android:layout_height="wrap_content"
+       		    android:orientation="horizontal"  android:checkedButton="@+id/lunch" android:gravity="center"
+                android:id="@+id/yinjiu" >
+                <TextView
+                   android:text="           饮酒"   style="@style/textlarge"/>
+               <RadioButton
+            		android:text="无" android:id="@+id/inhospital_rbutton_yinjiu_1"  style="@style/textlarge" />
+               <RadioButton
+          		    android:text="有" android:id="@+id/inhospital_rbutton_yinjiu_2" style="@style/textlarge"/>
+              </RadioGroup>
+              <RadioGroup
+ 				android:layout_width="wrap_content"  android:layout_height="wrap_content"
+       		    android:orientation="horizontal"  android:checkedButton="@+id/lunch" android:gravity="center"
+                android:id="@+id/yinshi" >
+                <TextView
+                   android:text="           饮食"   style="@style/textlarge"/>
+               <RadioButton
+            		android:text="正常" android:id="@+id/inhospital_rbutton_yinshi_1"  style="@style/textlarge" />
+               <RadioButton
+          		    android:text="不正常" android:id="@+id/inhospital_rbutton_yinshi_2" style="@style/textlarge"/>
+              </RadioGroup>
+              <RadioGroup
+ 				android:layout_width="wrap_content"  android:layout_height="wrap_content"
+       		    android:orientation="horizontal"  android:checkedButton="@+id/lunch" android:gravity="center"
+                android:id="@+id/shuimian" >
+                <TextView
+                   android:text="           睡眠"   style="@style/textlarge"/>
+               <RadioButton
+            		android:text="自然入睡" android:id="@+id/inhospital_rbutton_shuimian_1"  style="@style/textlarge" />
+               <RadioButton
+          		    android:text="药物辅助" android:id="@+id/inhospital_rbutton_shuimian_2" style="@style/textlarge"/>
+              </RadioGroup>
+        </LinearLayout>
+        
+        <LinearLayout  android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">  
+             <RadioGroup
+ 				android:layout_width="wrap_content"  android:layout_height="wrap_content"
+       		    android:orientation="horizontal"  android:checkedButton="@+id/lunch" android:gravity="center"
+                android:id="@+id/yaowu" >
+                <TextView
+                   android:text="过敏史: 药物"   style="@style/textlarge"/>
+               <RadioButton
+            		android:text="无" android:id="@+id/inhospital_rbutton_yaowu_1"  style="@style/textlarge" />
+               <RadioButton
+          		    android:text="有"  android:id="@+id/inhospital_rbutton_yaowu_2" style="@style/textlarge" />
+              </RadioGroup>
+            <RadioGroup
+ 				android:layout_width="wrap_content"  android:layout_height="wrap_content"
+       		    android:orientation="horizontal"  android:checkedButton="@+id/lunch" android:gravity="center"
+                android:id="@+id/shiwu" >
+                <TextView
+                   android:text="            食物"   style="@style/textlarge"/>
+               <RadioButton
+            		android:text="无" android:id="@+id/inhospital_rbutton_shiwu_1"  style="@style/textlarge" />
+               <RadioButton
+          		    android:text="有"  android:id="@+id/inhospital_rbutton_shiwu_2" style="@style/textlarge" />
+              </RadioGroup>
+              
+            <RadioGroup
+ 				android:layout_width="wrap_content"  android:layout_height="wrap_content"
+       		    android:orientation="horizontal"  android:checkedButton="@+id/lunch" android:gravity="center"
+                android:id="@+id/qita" android:layout_marginLeft="50dp">
+               <RadioButton
+            		android:text="其他" android:id="@+id/inhospital_rbutton_qita_1"  style="@style/textlarge" />
+              </RadioGroup>
+            <EditText android:id="@+id/inhospital_et_qita_qita" android:layout_width="300dp" android:layout_height="wrap_content"  />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"   android:orientation="horizontal" >
+                <TextView
+                   android:text="护理级别: "  android:textSize="18dp" android:layout_width="wrap_content"  android:layout_height="wrap_content"/>
+               <CheckBox
+            		android:text="特级护理" android:textSize="18dp" android:id="@+id/inhospital_checkbox_hulijibie_1"  android:layout_width="wrap_content"  android:layout_height="wrap_content" />
+               <CheckBox
+          		    android:text="一级护理" android:textSize="18dp" android:id="@+id/inhospital_checkbox_hulijibie_2" android:layout_width="wrap_content"  android:layout_height="wrap_content" />
+               <CheckBox
+            		android:text="二级护理" android:textSize="18dp" android:id="@+id/inhospital_checkbox_hulijibie_3"  android:layout_width="wrap_content"  android:layout_height="wrap_content" />
+               <CheckBox
+          		    android:text="三级护理" android:textSize="18dp" android:id="@+id/inhospital_checkbox_hulijibie_4" android:layout_width="wrap_content"  android:layout_height="wrap_content" />
+        </LinearLayout>
+        
+        <LinearLayout  android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">      
+            <RadioGroup
+ 				android:layout_width="wrap_content"  android:layout_height="wrap_content"
+       		    android:orientation="horizontal"  android:checkedButton="@+id/lunch" android:gravity="center"
+                android:id="@+id/wowei" >
+               <TextView
+                   android:text="卧位: "   style="@style/textlarge"/>
+               <RadioButton
+            		android:text="平卧位" style="@style/textlarge" android:id="@+id/inhospital_rbutton_wowei_1"   />
+               <RadioButton
+          		    android:text="半卧位" style="@style/textlarge" android:id="@+id/inhospital_rbutton_wowei_2" />
+               <RadioButton
+           		    android:text="自主体位" style="@style/textlarge" android:id="@+id/inhospital_rbutton_wowei_3" />
+               <RadioButton
+           		    android:text="其他：" style="@style/textlarge" android:id="@+id/inhospital_rbutton_wowei_4" />
+            </RadioGroup>
+            <EditText android:id="@+id/inhospital_et_wowei_qita" android:layout_width="300dp" android:layout_height="wrap_content"  />
+        </LinearLayout>
+        
+        <LinearLayout  android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">  
+             <RadioGroup
+ 				android:layout_width="wrap_content"  android:layout_height="wrap_content"
+       		    android:orientation="horizontal"  android:checkedButton="@+id/lunch" android:gravity="center"
+                android:id="@+id/yinshiqingkuang" >
+                <TextView
+                   android:text="饮食: "   style="@style/textlarge"/>
+               <RadioButton
+            		android:text="普食" android:id="@+id/inhospital_rbutton_yinshiqingkuang_1"  style="@style/textlarge" />
+               <RadioButton
+          		    android:text="半流食"  android:id="@+id/inhospital_rbutton_yinshiqingkuang_2" style="@style/textlarge" />
+               <RadioButton
+            		android:text="流食" android:id="@+id/inhospital_rbutton_yinshiqingkuang_3"  style="@style/textlarge" />
+               <RadioButton
+          		    android:text="禁食"  android:id="@+id/inhospital_rbutton_yinshiqingkuang_4" style="@style/textlarge" />
+               <RadioButton
+            		android:text="低盐低脂普食" android:id="@+id/inhospital_rbutton_yinshiqingkuang_5"  style="@style/textlarge" />
+               <RadioButton
+          		    android:text="其他"  android:id="@+id/inhospital_rbutton_yinshiqingkuang_6" style="@style/textlarge" />        
+             </RadioGroup>
+             <EditText android:id="@+id/inhospital_et_yinshiqingkuang_qita" android:layout_width="150dp" android:layout_height="wrap_content"  />
+        </LinearLayout>
+        
+        <LinearLayout  android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">  
+             <RadioGroup
+ 				android:layout_width="wrap_content"  android:layout_height="wrap_content"
+       		    android:orientation="horizontal"  android:checkedButton="@+id/lunch" android:gravity="center"
+                android:id="@+id/dabian" >
+                <TextView
+                   android:text="大便: "   style="@style/textlarge"/>
+               <RadioButton
+            		android:text="正常" android:id="@+id/inhospital_rbutton_dabian_1"  style="@style/textlarge" />
+               <RadioButton
+          		    android:text="便秘"  android:id="@+id/inhospital_rbutton_dabian_2" style="@style/textlarge" />
+               <RadioButton
+            		android:text="腹泻" android:id="@+id/inhospital_rbutton_dabian_3"  style="@style/textlarge" />
+               <RadioButton
+          		    android:text="造瘘"  android:id="@+id/inhospital_rbutton_dabian_4" style="@style/textlarge" />
+             </RadioGroup>
+        </LinearLayout>
+        
+        <LinearLayout  android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">  
+             <RadioGroup
+ 				android:layout_width="wrap_content"  android:layout_height="wrap_content"
+       		    android:orientation="horizontal"  android:checkedButton="@+id/lunch" android:gravity="center"
+                android:id="@+id/xiaobian" >
+                <TextView
+                   android:text="小便: "   style="@style/textlarge"/>
+               <RadioButton
+            		android:text="正常" android:id="@+id/inhospital_rbutton_xiaobian_1"  style="@style/textlarge" />
+               <RadioButton
+          		    android:text="失禁"  android:id="@+id/inhospital_rbutton_xiaobian_2" style="@style/textlarge" />
+               <RadioButton
+            		android:text="排尿困难" android:id="@+id/inhospital_rbutton_xiaobian_3"  style="@style/textlarge" />
+               <RadioButton
+          		    android:text="留置导管"  android:id="@+id/inhospital_rbutton_xiaobian_4" style="@style/textlarge" />
+                <RadioButton
+          		    android:text="异常"  android:id="@+id/inhospital_rbutton_xiaobian_5" style="@style/textlarge" />
+             </RadioGroup>
+        </LinearLayout>
+        
+         <LinearLayout  android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">  
+             <RadioGroup
+ 				android:layout_width="wrap_content"  android:layout_height="wrap_content"
+       		    android:orientation="horizontal"  android:checkedButton="@+id/lunch" android:gravity="center"
+                android:id="@+id/pifuqingkuang" >
+                <TextView
+                   android:text="皮肤情况: "   style="@style/textlarge"/>
+               <RadioButton
+            		android:text="正常"  android:id="@+id/inhospital_rbutton_pifuqingkuang_1"  style="@style/textlarge" />
+               <RadioButton
+          		    android:text="苍白"  android:id="@+id/inhospital_rbutton_pifuqingkuang_2" style="@style/textlarge" />
+               <RadioButton
+            		android:text="紫绀"  android:id="@+id/inhospital_rbutton_pifuqingkuang_3"  style="@style/textlarge" />
+               <RadioButton
+          		    android:text="黄杂"  android:id="@+id/inhospital_rbutton_pifuqingkuang_4" style="@style/textlarge" />
+               <RadioButton
+            		android:text="青紫"  android:id="@+id/inhospital_rbutton_pifuqingkuang_5" style="@style/textlarge"  />
+               <RadioButton
+            		android:text="水肿"  android:id="@+id/inhospital_rbutton_pifuqingkuang_6" style="@style/textlarge"  />
+               <RadioButton
+          		    android:text="脱皮"  android:id="@+id/inhospital_rbutton_pifuqingkuang_7" style="@style/textlarge"/>
+               <RadioButton
+           		    android:text="皮疹"  android:id="@+id/inhospital_rbutton_pifuqingkuang_8" style="@style/textlarge" />
+               <RadioButton
+           		    android:text="部位："  android:id="@+id/inhospital_rbutton_pifuqingkuang_9" style="@style/textlarge"/>
+            </RadioGroup>
+            <EditText android:id="@+id/inhospital_et_pifuqingkuang_qita" android:layout_width="200dp" android:layout_height="wrap_content"  />
+        </LinearLayout>
+        
+         <LinearLayout  android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">  
+             <RadioGroup
+ 				android:layout_width="wrap_content"  android:layout_height="wrap_content"
+       		    android:orientation="horizontal"  android:checkedButton="@+id/lunch" android:gravity="center"
+                android:id="@+id/ruchuang" >
+                <TextView
+                   android:text="褥疮: "   style="@style/textlarge"/>
+               <RadioButton
+            		android:text="无" android:id="@+id/inhospital_rbutton_ruchuang_1"  style="@style/textlarge" />
+               <RadioButton
+          		    android:text="有 （"  android:id="@+id/inhospital_rbutton_ruchuang_2" style="@style/textlarge" />
+             </RadioGroup>
+             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="部位:"  android:textSize="20dp"/>
+             <EditText android:id="@+id/inhospital_et_ruchuang_buwei"   android:layout_width="80dp" android:layout_height="wrap_content"  />
+             
+             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="程度:"  android:textSize="20dp"/>
+             <EditText android:id="@+id/inhospital_et_ruchuang_chengdu"   android:layout_width="100dp" android:layout_height="wrap_content"  />
+             
+             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="面积:"  android:textSize="20dp"/>
+             <EditText android:id="@+id/inhospital_et_ruchuang_mianji"  android:layout_width="100dp" android:layout_height="wrap_content"  />
+             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="）"  android:textSize="20dp"/>
+        </LinearLayout>
+        <LinearLayout  android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">  
+             <RadioGroup
+ 				android:layout_width="wrap_content"  android:layout_height="wrap_content"
+       		    android:orientation="horizontal"  android:checkedButton="@+id/lunch" android:gravity="center"
+                android:id="@+id/tengtong" >
+                <TextView
+                   android:text="疼痛: "   style="@style/textlarge"/>
+               <RadioButton
+            		android:text="无" android:id="@+id/inhospital_rbutton_tengtong_1"  style="@style/textlarge" />
+               <RadioButton
+          		    android:text="有 （"  android:id="@+id/inhospital_rbutton_tengtong_2" style="@style/textlarge" />
+             </RadioGroup>
+             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="部位:"  android:textSize="20dp"/>
+             <EditText android:id="@+id/inhospital_et_tengtong_buwei"   android:layout_width="80dp" android:layout_height="wrap_content"  />
+             
+             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="程度:"  android:textSize="20dp"/>
+             <EditText android:id="@+id/inhospital_et_tengtong_chengdu"   android:layout_width="100dp" android:layout_height="wrap_content"  />
+             
+             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="性质:"  android:textSize="20dp"/>
+             <EditText android:id="@+id/inhospital_et_tengtong_xingzhi"  android:layout_width="100dp" android:layout_height="wrap_content"  />
+             
+             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="时间:"  android:textSize="20dp"/>
+             <EditText android:id="@+id/inhospital_et_tengtong_time"  android:layout_width="100dp" android:layout_height="wrap_content"  />
+             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"  android:text="）"  android:textSize="20dp"/>
+        </LinearLayout>
+        
+        <LinearLayout  android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">  
+             <RadioGroup
+ 				android:layout_width="wrap_content"  android:layout_height="wrap_content"
+       		    android:orientation="horizontal"  android:checkedButton="@+id/lunch" android:gravity="center"
+                android:id="@+id/diedao" >
+                <TextView
+                   android:text="坠床跌倒风险: "   style="@style/textlarge"/>
+               <RadioButton
+            		android:text="无" android:id="@+id/inhospital_rbutton_diedao_1"  style="@style/textlarge" />
+               <RadioButton
+          		    android:text="有 "  android:id="@+id/inhospital_rbutton_diedao_2" style="@style/textlarge" />
+             </RadioGroup>
+        </LinearLayout>
+         <LinearLayout  android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">  
+             <RadioGroup
+ 				android:layout_width="wrap_content"  android:layout_height="wrap_content"
+       		    android:orientation="horizontal"  android:checkedButton="@+id/lunch" android:gravity="center"
+                android:id="@+id/jibingrenshi" >
+                <TextView
+                   android:text="对疾病的认识: "   style="@style/textlarge"/>
+               <RadioButton
+            		android:text="完全了解" android:id="@+id/inhospital_rbutton_jibingrenshi_1"  style="@style/textlarge" />
+               <RadioButton
+          		    android:text="部分了解" android:id="@+id/inhospital_rbutton_jibingrenshi_2" style="@style/textlarge" />
+               <RadioButton
+            		android:text="不了解" android:id="@+id/inhospital_rbutton_jibingrenshi_3"  style="@style/textlarge" />
+              </RadioGroup>
+        </LinearLayout>
+         <LinearLayout  android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">  
+             <RadioGroup
+ 				android:layout_width="wrap_content"  android:layout_height="wrap_content"
+       		    android:orientation="horizontal"  android:checkedButton="@+id/lunch" android:gravity="center"
+                android:id="@+id/zhuyuanxuzhi" >
+                <TextView
+                   android:text="告知患者和家属住院须知"   style="@style/textlarge"/>
+               <RadioButton
+            		android:text="无" android:id="@+id/inhospital_rbutton_zhuyuanxuzhi_1"  style="@style/textlarge" />
+               <RadioButton
+          		    android:text="有" android:id="@+id/inhospital_rbutton_zhuyuanxuzhi_2" style="@style/textlarge"/>
+              </RadioGroup>
+              <RadioGroup
+ 				android:layout_width="wrap_content"  android:layout_height="wrap_content"
+       		    android:orientation="horizontal"  android:checkedButton="@+id/lunch" android:gravity="center"
+                android:id="@+id/xuanjiao" >
+                <TextView
+                   android:text="            做入院宣教"   style="@style/textlarge"/>
+               <RadioButton
+            		android:text="无" android:id="@+id/inhospital_rbutton_xuanjiao_1"  style="@style/textlarge" />
+               <RadioButton
+          		    android:text="有" android:id="@+id/inhospital_rbutton_xuanjiao_2" style="@style/textlarge"/>
+              </RadioGroup>
+        </LinearLayout>
+      
+        <!-- 第四块：压疮危险因素评分-->
+        <LinearLayout  android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">      
+             <TextView android:text="压疮危险因素评分:总分6-23分，其分值越少，发生压疮的危险性越高" android:textColor="@+color/orchid" android:layout_width="wrap_content" android:layout_height="wrap_content"   android:textSize="25dp"/>
+        </LinearLayout>
+        <LinearLayout  android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">  
+             <RadioGroup
+ 				android:layout_width="wrap_content"  android:layout_height="wrap_content"
+       		    android:orientation="horizontal"  android:checkedButton="@+id/lunch" android:gravity="center"
+                android:id="@+id/ganjue" >
+                <TextView
+                   android:text="感觉: "   style="@style/textlarge"/>
+               <RadioButton
+            		android:text="1完全丧失" android:id="@+id/inhospital_rbutton_ganjue_1"  style="@style/textlarge" />
+               <RadioButton
+          		    android:text="2非常丧失"  android:id="@+id/inhospital_rbutton_ganjue_2" style="@style/textlarge" />
+               <RadioButton
+            		android:text="3轻度丧失" android:id="@+id/inhospital_rbutton_ganjue_3"  style="@style/textlarge" />
+               <RadioButton
+          		    android:text="4未受损害"  android:id="@+id/inhospital_rbutton_ganjue_4" style="@style/textlarge" />
+              </RadioGroup>
+        </LinearLayout>
+        <LinearLayout  android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">  
+             <RadioGroup
+ 				android:layout_width="wrap_content"  android:layout_height="wrap_content"
+       		    android:orientation="horizontal"  android:checkedButton="@+id/lunch" android:gravity="center"
+                android:id="@+id/chaoshi" >
+                <TextView
+                   android:text="潮湿: "   style="@style/textlarge"/>
+               <RadioButton
+            		android:text="1持久潮湿" android:id="@+id/inhospital_rbutton_chaoshi_1"  style="@style/textlarge" />
+               <RadioButton
+          		    android:text="2非常潮湿"  android:id="@+id/inhospital_rbutton_chaoshi_2" style="@style/textlarge" />
+               <RadioButton
+            		android:text="3偶尔潮湿" android:id="@+id/inhospital_rbutton_chaoshi_3"  style="@style/textlarge" />
+               <RadioButton
+          		    android:text="4很少潮湿"  android:id="@+id/inhospital_rbutton_chaoshi_4" style="@style/textlarge" />
+              </RadioGroup>
+        </LinearLayout>
+        <LinearLayout  android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">  
+             <RadioGroup
+ 				android:layout_width="wrap_content"  android:layout_height="wrap_content"
+       		    android:orientation="horizontal"  android:checkedButton="@+id/lunch" android:gravity="center"
+                android:id="@+id/hongdong" >
+                <TextView
+                   android:text="活动: "   style="@style/textlarge"/>
+               <RadioButton
+            		android:text="1卧床不起" android:id="@+id/inhospital_rbutton_hongdong_1"  style="@style/textlarge" />
+               <RadioButton
+          		    android:text="2局限于床"  android:id="@+id/inhospital_rbutton_hongdong_2" style="@style/textlarge" />
+               <RadioButton
+            		android:text="3偶尔步行" android:id="@+id/inhospital_rbutton_hongdong_3"  style="@style/textlarge" />
+               <RadioButton
+          		    android:text="4经常步行"  android:id="@+id/inhospital_rbutton_hongdong_4" style="@style/textlarge" />
+              </RadioGroup>
+        </LinearLayout>
+        <LinearLayout  android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">  
+             <RadioGroup
+ 				android:layout_width="wrap_content"  android:layout_height="wrap_content"
+       		    android:orientation="horizontal"  android:checkedButton="@+id/lunch" android:gravity="center"
+                android:id="@+id/yidong" >
+                <TextView
+                   android:text="移动: "   style="@style/textlarge"/>
+               <RadioButton
+            		android:text="1完全不能" android:id="@+id/inhospital_rbutton_yidong_1"  style="@style/textlarge" />
+               <RadioButton
+          		    android:text="2严重受限"  android:id="@+id/inhospital_rbutton_yidong_2" style="@style/textlarge" />
+               <RadioButton
+            		android:text="3轻度受限" android:id="@+id/inhospital_rbutton_yidong_3"  style="@style/textlarge" />
+               <RadioButton
+          		    android:text="4不受限"  android:id="@+id/inhospital_rbutton_yidong_4" style="@style/textlarge" />
+              </RadioGroup>
+        </LinearLayout>
+        <LinearLayout  android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">  
+             <RadioGroup
+ 				android:layout_width="wrap_content"  android:layout_height="wrap_content"
+       		    android:orientation="horizontal"  android:checkedButton="@+id/lunch" android:gravity="center"
+                android:id="@+id/yingyang" >
+                <TextView
+                   android:text="营养: "   style="@style/textlarge"/>
+               <RadioButton
+            		android:text="1非常差" android:id="@+id/inhospital_rbutton_yingyang_1"  style="@style/textlarge" />
+               <RadioButton
+          		    android:text="2可能不足"  android:id="@+id/inhospital_rbutton_yingyang_2" android:layout_marginLeft="20dp" style="@style/textlarge" />
+               <RadioButton
+            		android:text="3适当" android:id="@+id/inhospital_rbutton_yingyang_3"  style="@style/textlarge" />
+               <RadioButton
+          		    android:text="4良好"  android:id="@+id/inhospital_rbutton_yingyang_4" android:layout_marginLeft="36dp" style="@style/textlarge" />
+              </RadioGroup>
+        </LinearLayout>
+        <LinearLayout  android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">  
+             <RadioGroup
+ 				android:layout_width="wrap_content"  android:layout_height="wrap_content"
+       		    android:orientation="horizontal"  android:checkedButton="@+id/lunch" android:gravity="center"
+                android:id="@+id/mochajianqie" >
+                <TextView
+                   android:text="摩擦和剪切力: "   style="@style/textlarge"/>
+               <RadioButton
+            		android:text="1有问题" android:id="@+id/inhospital_rbutton_mochajianqie_1"  style="@style/textlarge" />
+               <RadioButton
+          		    android:text="2有潜在危险"  android:id="@+id/inhospital_rbutton_mochajianqie_2" android:layout_marginLeft="20dp" style="@style/textlarge" />
+               <RadioButton
+            		android:text="3无明显问题" android:id="@+id/inhospital_rbutton_mochajianqie_3"  style="@style/textlarge" />
+              </RadioGroup>
+        </LinearLayout>
+        <LinearLayout  android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">      
+             <TextView android:text="总分值："  android:layout_width="wrap_content" android:layout_height="wrap_content"   android:textSize="18dp"/>
+             <EditText android:id="@+id/inhospital_et_ycwx_zongfen" android:enabled="false"  android:layout_width="80dp" android:layout_height="wrap_content"  /> 
+             <TextView android:text="危险程度："  android:layout_width="wrap_content" android:layout_height="wrap_content"   android:textSize="18dp"/>
+             <EditText android:id="@+id/inhospital_et_ycwx_wxcd" android:enabled="false"  android:layout_width="80dp" android:layout_height="wrap_content"  />              
+        </LinearLayout>
+        <!-- 第五块  坠床跌倒评分 -->
+        <LinearLayout  android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">      
+             <TextView android:text="坠床跌倒评分：" android:textColor="@+color/blue" android:layout_width="wrap_content" android:layout_height="wrap_content"   android:textSize="25dp"/>
+        </LinearLayout>
+        <LinearLayout  android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">  
+             <CheckBox   android:id="@+id/inhospital_checkbox_zhuichuang_1" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+                         android:text="2 意识模糊无定向力" />
+             <CheckBox   android:id="@+id/inhospital_checkbox_zhuichuang_2" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+                         android:text="3 近3个月内有3次以上坠床跌倒史" android:layout_marginLeft="20dp"/>
+             <CheckBox   android:id="@+id/inhospital_checkbox_zhuichuang_3" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+                         android:text="2 站立不稳" />
+             <CheckBox   android:id="@+id/inhospital_checkbox_zhuichuang_4" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+                         android:text="3 头晕" />
+        </LinearLayout>
+        
+        <LinearLayout  android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">  
+             <CheckBox   android:id="@+id/inhospital_checkbox_zhuichuang_5" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+                         android:text="1 视物模糊" />
+             <CheckBox   android:id="@+id/inhospital_checkbox_zhuichuang_6" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+                         android:text="2 镇静期间" android:layout_marginLeft="90dp"/>
+             <CheckBox   android:id="@+id/inhospital_checkbox_zhuichuang_7" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+                         android:text="1 体能虚弱" />
+             <CheckBox   android:id="@+id/inhospital_checkbox_zhuichuang_8" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+                         android:text="2 诊断为体能性低血压" />
+        </LinearLayout>
+        
+        <LinearLayout  android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">  
+             <CheckBox   android:id="@+id/inhospital_checkbox_zhuichuang_9" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+                         android:text="2 近期有意识丧失癫痫史" />
+             <CheckBox   android:id="@+id/inhospital_checkbox_zhuichuang_10" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+                         android:text="1 >65岁" />
+             <CheckBox   android:id="@+id/inhospital_checkbox_zhuichuang_11" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+                         android:text="1 吸烟或酗酒" />
+             <CheckBox   android:id="@+id/inhospital_checkbox_zhuichuang_12" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+                         android:text="1 使用抗高血压药物" />
+        </LinearLayout>
+        <LinearLayout  android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">      
+             <TextView android:text="总分值："  android:layout_width="wrap_content" android:layout_height="wrap_content"   android:textSize="18dp"/>
+             <EditText android:id="@+id/inhospital_et_zcddpf_zongfen" android:enabled="false"  android:layout_width="80dp" android:layout_height="wrap_content"  /> 
+             <TextView android:text="危险程度："  android:layout_width="wrap_content" android:layout_height="wrap_content"   android:textSize="18dp"/>
+             <EditText android:id="@+id/inhospital_et_zcddpf_wxcd" android:enabled="false"  android:layout_width="80dp" android:layout_height="wrap_content"  />              
+        </LinearLayout>
+        
+        <!-- 第六块   疼痛评分-->
+         <LinearLayout  android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">      
+             <TextView android:text="疼痛评分 0-4分 极少或没有疼痛 ；5-6分 中度疼痛；7-10分重度疼痛" android:textColor="@+color/violet" android:layout_width="wrap_content" android:layout_height="wrap_content"   android:textSize="25dp"/>
+        </LinearLayout>
+         <LinearLayout  android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">  
+             <CheckBox   android:id="@+id/inhospital_checkbox_tengtong_0" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+                         android:text="不痛0分" />
+             <CheckBox   android:id="@+id/inhospital_checkbox_tengtong_1" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+                         android:text="1分" />
+             <CheckBox   android:id="@+id/inhospital_checkbox_tengtong_2" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+                         android:text="2分" />
+             <CheckBox   android:id="@+id/inhospital_checkbox_tengtong_3" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+                         android:text="3分" />
+             <CheckBox   android:id="@+id/inhospital_checkbox_tengtong_4" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+                         android:text="4分" />
+             <CheckBox   android:id="@+id/inhospital_checkbox_tengtong_5" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+                         android:text="5分" />
+             <CheckBox   android:id="@+id/inhospital_checkbox_tengtong_6" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+                         android:text="6分" />
+        </LinearLayout>
+        
+         <LinearLayout  android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">  
+             <CheckBox   android:id="@+id/inhospital_checkbox_tengtong_7" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+                         android:text="7分" />
+             <CheckBox   android:id="@+id/inhospital_checkbox_tengtong_8" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+                         android:text="8分" />
+             <CheckBox   android:id="@+id/inhospital_checkbox_tengtong_9" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+                         android:text="9分" />
+             <CheckBox   android:id="@+id/inhospital_checkbox_tengtong_10" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+                         android:text="很痛10分" />
+        </LinearLayout>  
+        <LinearLayout  android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">      
+             <TextView android:text="疼痛程度："  android:layout_width="wrap_content" android:layout_height="wrap_content"   android:textSize="18dp"/>
+             <EditText android:id="@+id/inhospital_et_ttpf_zongfen" android:enabled="false"  android:layout_width="80dp" android:layout_height="wrap_content"  />     
+        </LinearLayout>       
+   </LinearLayout>  
+     <RelativeLayout
+        android:id="@+id/button_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true" 
+        >
+
+        <Button
+            android:id="@+id/add_evaluation_but_cancle"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dip"
+            android:text="取消" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/add_evaluation_but_clear"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:text="清空"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/add_evaluation_but_ok"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:text="保存" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
+</ScrollView>

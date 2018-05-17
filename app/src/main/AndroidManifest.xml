@@ -1,0 +1,87 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.hospital.ui.activity"
+    >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="15" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/HospitalTheme"
+        android:name="com.android.hospital.HospitalApp">
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_item_list"
+            android:theme="@style/MaterialLoginTheme"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".AddDcAdviceActivity"  android:label="@string/add_dcadvice" android:screenOrientation="landscape" android:theme="@style/HospitalTheme"/>
+        <activity android:name=".MainActivity" android:theme="@style/HospitalTheme" android:screenOrientation="landscape" />
+        <activity android:name=".InspectiondetailActivity" android:theme="@style/HospitalTheme" android:screenOrientation="landscape"/>
+        <activity android:name=".PrescriptiondetailActivity" android:theme="@style/HospitalTheme" android:screenOrientation="landscape"/>
+        <activity android:name=".AddCheckActivity" android:theme="@style/HospitalTheme" android:label="@string/add_check"  android:screenOrientation="landscape"/>
+        <activity android:name=".AddInspectionActivity" android:theme="@style/HospitalTheme" android:label="@string/add_inspection"  android:screenOrientation="landscape"/>
+        <activity android:name=".AddPrescriptionActivity" android:theme="@style/HospitalTheme" android:label="@string/add_prescription"  android:screenOrientation="landscape"/>
+        <activity android:name=".AddOperationActivity" android:theme="@style/HospitalTheme" android:label="@string/add_operation"  android:screenOrientation="landscape"/>
+        <activity android:name=".AddBloodActivity" android:theme="@style/HospitalTheme" android:label="@string/add_blood" android:screenOrientation="landscape"/>
+        <activity android:name=".AddBloodNewActivity" android:theme="@style/HospitalTheme" android:label="@string/add_blood_new" android:screenOrientation="landscape"/>
+        <activity android:name=".OperationActivity" android:theme="@style/HospitalTheme" android:label="@string/operation_query"  android:screenOrientation="landscape"/>
+        <activity android:name=".BloodActivity" android:theme="@style/HospitalTheme" android:label="@string/blood_query"  android:screenOrientation="landscape"/>
+        <activity android:name=".CheckdetailActivity" android:theme="@style/HospitalTheme" android:screenOrientation="landscape"/>
+        <activity android:name=".StartActivity" android:theme="@style/HospitalTheme" android:screenOrientation="landscape"/>
+        <activity android:name=".GroupDcAdviceActivity" android:theme="@style/HospitalTheme" android:label="@string/group_dcadvice" android:screenOrientation="landscape" />
+        <activity android:name=".TemperatureActivity" android:theme="@style/HospitalTheme" android:screenOrientation="landscape" />
+        <activity android:name=".InspectionChartActivity" android:theme="@style/HospitalTheme" android:screenOrientation="landscape" />
+        <activity android:name=".PatientInforActivity" android:theme="@style/HospitalTheme" android:screenOrientation="landscape" />
+        <activity android:name=".PcsPhotoViewActivity" android:theme="@style/HospitalTheme" android:screenOrientation="landscape" />
+        <activity android:name=".MonovoSeriesActivity" android:theme="@style/HospitalTheme" android:label="序列列表" android:screenOrientation="landscape" />
+        <activity android:name=".MonovoImagesActivity" android:theme="@style/HospitalTheme" android:label="图像列表" android:screenOrientation="landscape" />
+        <activity android:name=".MonovoStudyListActivity" android:theme="@style/HospitalTheme" android:label="检查图像列表" android:screenOrientation="landscape" />
+        <activity android:name=".MonovoTempImagesActivity" android:theme="@style/HospitalTheme" android:label="检查图像列表" android:screenOrientation="landscape" />
+        <activity android:name=".AnimationDrawableActivity" android:theme="@style/HospitalTheme" android:label="播放图像" android:screenOrientation="landscape" />
+        <activity android:name=".LocalTempEmrActivity" android:theme="@style/HospitalTheme" android:label="电子病历" android:screenOrientation="landscape" />
+        <activity android:name=".PacsImageSliderActivity" android:theme="@style/HospitalTheme" android:label="播放图像" android:screenOrientation="landscape" />
+        <activity android:name=".TempPhotoActivity" android:theme="@style/HospitalTheme" android:label="查看图像" android:screenOrientation="landscape" />
+        <activity android:name="org.achartengine.GraphicalActivity" />
+        <activity android:name="com.android.hospital.temperature.ChartDemo"/>
+        <service android:enabled="true" android:name="com.android.hospital.service.MyService" />
+        <!-- #####################JUnit测试需要的权限标签 #####################-->
+		<uses-library android:name="android.test.runner" />
+    </application>
+
+    
+    <!-- 访问精确位置的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 读取电话状态的权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 调用摄像头权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+     <!--往sdcard中写入数据的权限 -->
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+	 <!--在sdcard中创建/删除文件的权限 -->
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"></uses-permission>
+    <!-- 硬件震动 -->
+	<uses-permission android:name="android.permission.VIBRATE" />
+	<!-- 使用网络 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- 查询网络状态 -->
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+	<!-- 获取地理位置 -->
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<!-- 短信和电话权限 -->
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- #####################JUnit测试需要的权限标签 #####################-->
+	<!--<instrumentation android:name="android.test.InstrumentationTestRunner" android:targetPackage="com.whl.taskmanager"/>-->
+</manifest>

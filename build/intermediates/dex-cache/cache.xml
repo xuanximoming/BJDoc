@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="F:\CODE\Andriod\BJDoc\app\libs\achartengine-1.0.0.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="b2bb0af9f390c0edd4d7d95f613f38da3abe0144">
+        <dex dex="F:\CODE\Andriod\BJDoc\app\build\intermediates\pre-dexed\debug\achartengine-1.0.0_6fe8db4059787aa8a3a5c08846251f5bdc02823a.jar" />
+    </item>
+    <item
+        jar="C:\Users\key\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.4.0\f36d2d4e3a36b3259aaf9d004d29b4cdc6c1bfb2\picasso-2.4.0.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="f36d2d4e3a36b3259aaf9d004d29b4cdc6c1bfb2">
+        <dex dex="F:\CODE\Andriod\BJDoc\app\build\intermediates\pre-dexed\debug\picasso-2.4.0_a8a86d0fb733e9a9e7548f8a622df474ebaa4b14.jar" />
+    </item>
+    <item
+        jar="C:\Users\key\.gradle\caches\modules-2\files-2.1\org.apache.commons\commons-lang3\3.1\905075e6c80f206bbe6cf1e809d2caa69f420c76\commons-lang3-3.1.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="905075e6c80f206bbe6cf1e809d2caa69f420c76">
+        <dex dex="F:\CODE\Andriod\BJDoc\app\build\intermediates\pre-dexed\debug\commons-lang3-3.1_e46a7e22bdf22188ecd4861b73760210482dc3fb.jar" />
+    </item>
+    <item
+        jar="C:\Users\key\.gradle\caches\modules-2\files-2.1\com.loopj.android\android-async-http\1.4.6\a845a88238be0b5be9d238652c1bc0605ef91f52\android-async-http-1.4.6.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="a845a88238be0b5be9d238652c1bc0605ef91f52">
+        <dex dex="F:\CODE\Andriod\BJDoc\app\build\intermediates\pre-dexed\debug\android-async-http-1.4.6_b537bc6a5eece32bdd86177166fbb3d070976a04.jar" />
+    </item>
+    <item
+        jar="C:\Users\key\.gradle\caches\modules-2\files-2.1\com.github.kevinsawicki\http-request\5.5\ccba3686d4f6be4f801afc44b89d21c194633940\http-request-5.5.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="ccba3686d4f6be4f801afc44b89d21c194633940">
+        <dex dex="F:\CODE\Andriod\BJDoc\app\build\intermediates\pre-dexed\debug\http-request-5.5_2841301a40a3e4adf3a438f2bac5d53b3c165aa9.jar" />
+    </item>
+    <item
+        jar="F:\CODE\Andriod\BJDoc\app\libs\android-support-v4.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="612846c9857077a039b533718f72db3bc041d389">
+        <dex dex="F:\CODE\Andriod\BJDoc\app\build\intermediates\pre-dexed\debug\android-support-v4_d11773f0425326f4a7d67f35f64ae4a446348964.jar" />
+    </item>
+    <item
+        jar="C:\Users\key\.gradle\caches\modules-2\files-2.1\com.j256.ormlite\ormlite-android\4.47\c72f9ed54d8a8bab3fbf56da2b358308a67899a4\ormlite-android-4.47.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="c72f9ed54d8a8bab3fbf56da2b358308a67899a4">
+        <dex dex="F:\CODE\Andriod\BJDoc\app\build\intermediates\pre-dexed\debug\ormlite-android-4.47_764e2b9b3526268ed6b9e27b89f680bdad4207ac.jar" />
+    </item>
+    <item
+        jar="C:\Users\key\.gradle\caches\modules-2\files-2.1\com.nostra13.universalimageloader\universal-image-loader\1.9.3\a85588bec3e2c4584d593d3f15df1677321bca72\universal-image-loader-1.9.3.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="a85588bec3e2c4584d593d3f15df1677321bca72">
+        <dex dex="F:\CODE\Andriod\BJDoc\app\build\intermediates\pre-dexed\debug\universal-image-loader-1.9.3_8a4d9fdbbf0fdc6be1bf69b6c3493d74cebbc075.jar" />
+    </item>
+    <item
+        jar="F:\CODE\Andriod\BJDoc\app\libs\android-query-full.0.21.7.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="9d242673deb4b57ba3e41f455fa414388d826e96">
+        <dex dex="F:\CODE\Andriod\BJDoc\app\build\intermediates\pre-dexed\debug\android-query-full.0.21.7_c639a32fa6a54480ae09b1d28a94bb94e3f3e744.jar" />
+    </item>
+    <item
+        jar="C:\Users\key\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="F:\CODE\Andriod\BJDoc\app\build\intermediates\pre-dexed\debug\library-2.4.0_3bb5a92f283a210c7148d56a9528d08d090ea396.jar" />
+    </item>
+    <item
+        jar="C:\Users\key\.gradle\caches\modules-2\files-2.1\com.j256.ormlite\ormlite-core\4.47\e11abddd1e9c2053a92133fa83f78f7bedb820a9\ormlite-core-4.47.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="e11abddd1e9c2053a92133fa83f78f7bedb820a9">
+        <dex dex="F:\CODE\Andriod\BJDoc\app\build\intermediates\pre-dexed\debug\ormlite-core-4.47_e8d361e8e7f6476c27154d5292ad3e41c17be3e4.jar" />
+    </item>
+    <item
+        jar="F:\CODE\Andriod\BJDoc\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="6ca0b9cd7c0da9d3810d252f5d13e5cc8bb2c18a">
+        <dex dex="F:\CODE\Andriod\BJDoc\app\build\intermediates\pre-dexed\debug\instant-run_7a073a71fb91b423d78912eeb5fe890a845abde4.jar" />
+    </item>
+    <item
+        jar="F:\CODE\Andriod\BJDoc\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="599711df16323587ff2452ec9c35a3777182d9b2">
+        <dex dex="F:\CODE\Andriod\BJDoc\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_2e81f263dabcf009af41ac6cd995a87953c36f23.jar" />
+    </item>
+    <item
+        jar="F:\CODE\Andriod\BJDoc\app\libs\ksoap2-android-assembly-2.5.7-jar-with-dependencies.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="2922050aefdc24827cfd3947f104ca84d8d52f81">
+        <dex dex="F:\CODE\Andriod\BJDoc\app\build\intermediates\pre-dexed\debug\ksoap2-android-assembly-2.5.7-jar-with-dependencies_581424f0828bb6b0d28ea600c9646009011b6290.jar" />
+    </item>
+    <item
+        jar="F:\CODE\Andriod\BJDoc\app\build\intermediates\exploded-aar\com.daimajia.slider\library\1.1.2\jars\classes.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="8aa807a27d3fde0de287ccb5cef2f302e180563f">
+        <dex dex="F:\CODE\Andriod\BJDoc\app\build\intermediates\pre-dexed\debug\com.daimajia.slider-library-1.1.2_ed5d66c3bb8c4aab425a9b2871f6796e45d2effb.jar" />
+    </item>
+    <item
+        jar="E:\Program Files\androidstudio\gradle\m2repository\com\google\code\gson\gson\2.2.4\gson-2.2.4.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="a60a5e993c98c864010053cb901b7eab25306568">
+        <dex dex="F:\CODE\Andriod\BJDoc\app\build\intermediates\pre-dexed\debug\gson-2.2.4_e726db8e9e193ff3f76ebd96a3fe8691fb3a8f1b.jar" />
+    </item>
+
+</items>

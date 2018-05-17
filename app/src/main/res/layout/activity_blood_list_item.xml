@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2006 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<!-- Layout of a header item in PreferenceActivity. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="48dp"
+    android:background="?android:attr/activatedBackgroundIndicator"
+    android:gravity="center_vertical"
+    android:paddingRight="?android:attr/scrollbarSize"
+    android:padding="5dp"
+    android:id="@+id/listview_common_titlebar_oper"
+    >
+  
+        <TextView
+            android:id="@+id/blood_item_tev_1"
+            style="@style/textdefault"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:text="序号"
+            android:textColor="@color/cornflowerblue" 
+            android:layout_weight="1"
+            />
+        
+       <View
+        android:id="@+id/listview_divider"
+        android:layout_width="2dip"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/main_list_divder" />
+       
+        <TextView
+            android:id="@+id/blood_item_tev_2"
+            style="@style/textdefault"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:text="科室"
+            android:layout_weight="2"
+             />
+
+        <View
+            android:id="@+id/listview_divider"
+        android:layout_width="2dip"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/main_list_divder" />
+       
+        <TextView android:id="@+id/blood_item_tev_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal" 
+            android:text="受血者"
+            style="@style/textdefault"
+            android:layout_weight="2"
+            />
+        <View
+            android:id="@+id/listview_divider"
+        android:layout_width="2dip"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/main_list_divder" />
+       
+        <TextView
+            android:id="@+id/blood_item_tev_4"
+            style="@style/textdefault"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:text="病人ID"
+            android:layout_weight="2"
+             />
+
+       <View
+        android:layout_width="2dip"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/main_list_divder" />
+       
+        <TextView android:id="@+id/blood_item_tev_5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal" 
+            android:text="申请单号"
+            style="@style/textdefault"
+            android:layout_weight="2"
+            />
+
+        <View
+        android:layout_width="2dip"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/main_list_divder" />
+       
+        <TextView
+            android:id="@+id/blood_item_tev_6"
+            style="@style/textdefault"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:text="血源"
+            android:layout_weight="1.5"
+             />
+
+        <View
+        android:layout_width="2dip"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/main_list_divder" />
+       
+        <TextView
+            android:id="@+id/blood_item_tev_7"
+            style="@style/textdefault"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:text="诊断"
+            android:layout_weight="3"
+             />
+
+        <View
+        android:layout_width="2dip"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/main_list_divder" />
+       
+        <TextView
+            android:id="@+id/blood_item_tev_8"
+            style="@style/textdefault"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:text="血型"
+            android:layout_weight="1"
+             />
+
+       <View
+        android:layout_width="2dip"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/main_list_divder" />
+       
+        <TextView
+            android:id="@+id/blood_item_tev_9"
+            style="@style/textdefault"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:text="Rh"
+            android:layout_weight="1"
+            />
+
+        <View
+        android:layout_width="2dip"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/main_list_divder" />
+       
+        <TextView
+            android:id="@+id/blood_item_tev_10"
+            style="@style/textdefault"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:text="方式"
+            android:layout_weight="1.5"
+             />
+
+        <View
+        android:layout_width="2dip"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/main_list_divder" />
+       
+        <TextView
+            android:id="@+id/blood_item_tev_11"
+            style="@style/textdefault"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:text="用血时间"
+            android:layout_weight="2"
+             />
+       <View
+        android:layout_width="2dip"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/main_list_divder" />
+       
+        <TextView 
+            android:id="@+id/blood_item_tev_12"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal" 
+            android:text="用血量"
+            style="@style/textdefault"
+            android:layout_weight="1"
+            />
+         <View
+        android:layout_width="2dip"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/main_list_divder" />
+       
+        <TextView 
+            android:id="@+id/blood_item_tev_13"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal" 
+            android:text="血液成分"
+            style="@style/textdefault"
+            android:layout_weight="3"
+            /> 
+</LinearLayout>

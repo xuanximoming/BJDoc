@@ -1,0 +1,7 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <item type="id" name="check_user_info">false</item>
+    <item type="id" name="check_left_fragment">false</item>
+    <item type="id" name="check_right_fragment">false</item>
+    <item type="id" name="check_foot_view">false</item>
+    
+</resources>

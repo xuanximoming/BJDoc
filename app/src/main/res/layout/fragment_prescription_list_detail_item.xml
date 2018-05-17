@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2006 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<!-- Layout of a header item in PreferenceActivity. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="48dp"
+    android:background="?android:attr/activatedBackgroundIndicator"
+    android:gravity="center_vertical"
+    android:paddingRight="?android:attr/scrollbarSize"
+    android:padding="5dp">
+  
+        <TextView
+            android:id="@+id/prescription_detail_list_item_tev_1"
+            style="@style/textdefault"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:text="序号"
+            android:textColor="@color/cornflowerblue" 
+            android:layout_weight="1" />
+        
+        <View 
+            android:id="@+id/listview_divider"
+        	android:layout_width="2dip"
+        	android:layout_height="match_parent"
+        	android:layout_marginLeft="5dp"
+        	android:layout_marginRight="5dp"
+        	android:background="@drawable/main_list_divder" />
+  
+        <TextView
+            android:id="@+id/prescription_detail_list_item_tev_2"
+            style="@style/textdefault"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:text="药品名称"
+            android:layout_weight="5"/>
+
+        <View
+            android:id="@+id/listview_divider"
+         	android:layout_width="2dip"
+        	android:layout_height="match_parent"
+        	android:layout_marginLeft="5dp"
+        	android:layout_marginRight="5dp"
+        	android:background="@drawable/main_list_divder" />
+       
+        <TextView 
+            android:id="@+id/prescription_detail_list_item_tev_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal" 
+            android:text="规格"
+            style="@style/textdefault"
+            android:layout_weight="4"/>
+        
+        <View
+            android:id="@+id/listview_divider"
+        	android:layout_width="2dip"
+        	android:layout_height="match_parent"
+        	android:layout_marginLeft="5dp"
+        	android:layout_marginRight="5dp"
+        	android:background="@drawable/main_list_divder" />   
+
+        <TextView
+            android:id="@+id/prescription_detail_list_item_tev_4"
+            style="@style/textdefault"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:text="厂商"
+            android:layout_weight="3"/>
+
+       <View
+        	android:layout_width="2dip"
+       	 	android:layout_height="match_parent"
+        	android:layout_marginLeft="5dp"
+        	android:layout_marginRight="5dp"
+        	android:background="@drawable/main_list_divder" />
+       
+        <TextView 
+            android:id="@+id/prescription_detail_list_item_tev_5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal" 
+            android:text="单次剂量"
+            style="@style/textdefault"
+            android:layout_weight="2"/>
+
+        <View
+        	android:layout_width="2dip"
+        	android:layout_height="match_parent"
+        	android:layout_marginLeft="5dp"
+        	android:layout_marginRight="5dp"
+        	android:background="@drawable/main_list_divder" />
+       
+        <TextView
+            android:id="@+id/prescription_detail_list_item_tev_6"
+            style="@style/textdefault"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:text="单位"
+            android:layout_weight="2"/>
+
+        <View
+        	android:layout_width="2dip"
+        	android:layout_height="match_parent"
+        	android:layout_marginLeft="5dp"
+        	android:layout_marginRight="5dp"
+        	android:background="@drawable/main_list_divder" />
+       
+        <TextView
+            android:id="@+id/prescription_detail_list_item_tev_7"
+            style="@style/textdefault"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:text="途径"
+            android:layout_weight="2"/>
+        
+         <View
+        	android:layout_width="2dip"
+        	android:layout_height="match_parent"
+        	android:layout_marginLeft="5dp"
+        	android:layout_marginRight="5dp"
+        	android:background="@drawable/main_list_divder" />
+       
+        <TextView
+            android:id="@+id/prescription_detail_list_item_tev_8"
+            style="@style/textdefault"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:text="频次"
+            android:layout_weight="2"/>
+        
+        <View
+        	android:layout_width="2dip"
+        	android:layout_height="match_parent"
+        	android:layout_marginLeft="5dp"
+        	android:layout_marginRight="5dp"
+        	android:background="@drawable/main_list_divder" />
+       
+        <TextView
+            android:id="@+id/prescription_detail_list_item_tev_9"
+            style="@style/textdefault"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:text="医生说明"
+            android:layout_weight="3"/>
+        
+        <View
+        	android:layout_width="2dip"
+        	android:layout_height="match_parent"
+        	android:layout_marginLeft="5dp"
+        	android:layout_marginRight="5dp"
+        	android:background="@drawable/main_list_divder" />     
+
+       	<TextView
+            android:id="@+id/prescription_detail_list_item_tev_10"
+            style="@style/textdefault"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:text="总量"
+            android:layout_weight="2"/>
+       	
+        <View
+        	android:layout_width="2dip"
+        	android:layout_height="match_parent"
+        	android:layout_marginLeft="5dp"
+        	android:layout_marginRight="5dp"
+        	android:background="@drawable/main_list_divder" />
+       
+        <TextView
+            android:id="@+id/prescription_detail_list_item_tev_11"
+            style="@style/textdefault"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:text="单位"
+            android:layout_weight="2"/>
+        
+        <View
+        	android:layout_width="2dip"
+        	android:layout_height="match_parent"
+        	android:layout_marginLeft="5dp"
+        	android:layout_marginRight="5dp"
+        	android:background="@drawable/main_list_divder" />
+       
+        <TextView
+            android:id="@+id/prescription_detail_list_item_tev_12"
+            style="@style/textdefault"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:text="计价"
+            android:layout_weight="2"/>
+         
+</LinearLayout>

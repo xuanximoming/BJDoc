@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_patient_list"
+    android:layout_width="match_parent"
+    android:layout_height="0px"
+    android:layout_weight="1"
+    android:paddingLeft="@dimen/preference_screen_header_padding_side"
+    android:paddingRight="@dimen/preference_screen_header_padding_side"
+    android:paddingTop="@dimen/preference_screen_header_vertical_padding"
+    android:paddingBottom="@dimen/preference_screen_header_vertical_padding"
+    android:clipToPadding="false"
+    android:scrollbarStyle="@integer/preference_screen_header_scrollbarStyle"
+    android:drawSelectorOnTop="false"
+    android:cacheColorHint="@android:color/transparent"
+    android:listPreferredItemHeight="48dp"
+    android:scrollbarAlwaysDrawVerticalTrack="true" 
+    style="@style/Widget.Holo.ListView"/>

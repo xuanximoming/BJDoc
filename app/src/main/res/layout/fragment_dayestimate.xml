@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <!-- 按照这个下面layout布局，依次往下添加，即可  从这开始-->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+                android:id="@+id/main_patient_info_tev"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                android:paddingLeft="?android:attr/listPreferredItemPaddingLeft"
+                android:paddingRight="?android:attr/listPreferredItemPaddingRight"
+                android:text="心理社会"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall" />
+        <com.android.hospital.widgets.MyGridView
+                android:id="@+id/dayestimate_gridview1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="15dip"
+                android:horizontalSpacing="15dip"
+                android:numColumns="6"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="6dp"
+                android:scrollbars="none" >
+       </com.android.hospital.widgets.MyGridView>
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+           >
+           <TextView 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="说明："
+               android:textSize="18dp"
+               />
+           <EditText 
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               />
+       </LinearLayout>
+    </LinearLayout>
+    <!-- 到这结束 -->
+    
+    <!-- 按照这个下面layout布局，依次往下添加，即可  从这开始-->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+                android:id="@+id/main_patient_info_tev"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                android:paddingLeft="?android:attr/listPreferredItemPaddingLeft"
+                android:paddingRight="?android:attr/listPreferredItemPaddingRight"
+                android:text="神经系统"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall" />
+        <com.android.hospital.widgets.MyGridView
+                android:id="@+id/dayestimate_gridview2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="15dip"
+                android:horizontalSpacing="15dip"
+                android:numColumns="6"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="6dp"
+                android:scrollbars="none" >
+       </com.android.hospital.widgets.MyGridView>
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+           >
+           <TextView 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="说明："
+               android:textSize="18dp"
+               />
+           <EditText 
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               />
+       </LinearLayout>
+    </LinearLayout>
+    <!-- 到这结束 -->
+    
+    <!-- 按照这个下面layout布局，依次往下添加，即可  从这开始-->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+                android:id="@+id/main_patient_info_tev"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                android:paddingLeft="?android:attr/listPreferredItemPaddingLeft"
+                android:paddingRight="?android:attr/listPreferredItemPaddingRight"
+                android:text="呼吸系统"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall" />
+        <com.android.hospital.widgets.MyGridView
+                android:id="@+id/dayestimate_gridview3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="15dip"
+                android:horizontalSpacing="15dip"
+                android:numColumns="6"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="6dp"
+                android:scrollbars="none" >
+       </com.android.hospital.widgets.MyGridView>
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+           >
+           <TextView 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="说明："
+               android:textSize="18dp"
+               />
+           <EditText 
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               />
+       </LinearLayout>
+    </LinearLayout>
+    <!-- 到这结束 -->
+    
+    <!-- 按照这个下面layout布局，依次往下添加，即可  从这开始-->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+                android:id="@+id/main_patient_info_tev"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                android:paddingLeft="?android:attr/listPreferredItemPaddingLeft"
+                android:paddingRight="?android:attr/listPreferredItemPaddingRight"
+                android:text="心理社会"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall" />
+        <com.android.hospital.widgets.MyGridView
+                android:id="@+id/dayestimate_gridview4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="15dip"
+                android:horizontalSpacing="15dip"
+                android:numColumns="6"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="6dp"
+                android:scrollbars="none" >
+       </com.android.hospital.widgets.MyGridView>
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+           >
+           <TextView 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="说明："
+               android:textSize="18dp"
+               />
+           <EditText 
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               />
+       </LinearLayout>
+    </LinearLayout>
+    <!-- 到这结束 -->
+    
+    <!-- 按照这个下面layout布局，依次往下添加，即可  从这开始-->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+                android:id="@+id/main_patient_info_tev"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                android:paddingLeft="?android:attr/listPreferredItemPaddingLeft"
+                android:paddingRight="?android:attr/listPreferredItemPaddingRight"
+                android:text="心理社会"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall" />
+        <com.android.hospital.widgets.MyGridView
+                android:id="@+id/dayestimate_gridview5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="15dip"
+                android:horizontalSpacing="15dip"
+                android:numColumns="6"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="6dp"
+                android:scrollbars="none" >
+       </com.android.hospital.widgets.MyGridView>
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+           >
+           <TextView 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="说明："
+               android:textSize="18dp"
+               />
+           <EditText 
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               />
+       </LinearLayout>
+    </LinearLayout>
+    <!-- 到这结束 -->
+    
+    <!-- 按照这个下面layout布局，依次往下添加，即可  从这开始-->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+                android:id="@+id/main_patient_info_tev"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                android:paddingLeft="?android:attr/listPreferredItemPaddingLeft"
+                android:paddingRight="?android:attr/listPreferredItemPaddingRight"
+                android:text="心理社会"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall" />
+        <com.android.hospital.widgets.MyGridView
+                android:id="@+id/dayestimate_gridview6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="15dip"
+                android:horizontalSpacing="15dip"
+                android:numColumns="6"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="6dp"
+                android:scrollbars="none" >
+       </com.android.hospital.widgets.MyGridView>
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+           >
+           <TextView 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="说明："
+               android:textSize="18dp"
+               />
+           <EditText 
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               />
+       </LinearLayout>
+    </LinearLayout>
+    <!-- 到这结束 -->
+    
+    <!-- 按照这个下面layout布局，依次往下添加，即可  从这开始-->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+                android:id="@+id/main_patient_info_tev"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                android:paddingLeft="?android:attr/listPreferredItemPaddingLeft"
+                android:paddingRight="?android:attr/listPreferredItemPaddingRight"
+                android:text="心理社会"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall" />
+        <com.android.hospital.widgets.MyGridView
+                android:id="@+id/dayestimate_gridview7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="15dip"
+                android:horizontalSpacing="15dip"
+                android:numColumns="6"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="6dp"
+                android:scrollbars="none" >
+       </com.android.hospital.widgets.MyGridView>
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+           >
+           <TextView 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="说明："
+               android:textSize="18dp"
+               />
+           <EditText 
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               />
+       </LinearLayout>
+    </LinearLayout>
+    <!-- 到这结束 -->
+    
+  </LinearLayout>
+</ScrollView>

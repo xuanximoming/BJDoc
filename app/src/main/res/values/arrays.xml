@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ordertype">
+        <item >全部</item>
+        <item >临时</item>
+        <item >长期</item>
+    </string-array>
+    <string-array name="showtype">
+        <item >都显示</item>
+        <item >已执行</item>
+        <item >医嘱本</item>
+    </string-array>
+    <string-array name="spinner_zi">
+        <item>无</item>
+        <item>自带药</item>
+        <item>手工计价</item>
+        <item>不计价</item>
+        <item>不摆药</item>
+        <item>出院带药</item>
+    </string-array>
+    <string-array name="array1">
+        <item>内一科</item>
+        <item>内二科</item>
+        <item>内三科</item>
+        <item>小儿科</item>
+        <item>普通外科</item>
+        <item>骨科</item>
+        <item>妇产科</item>
+        <item>综合病房科</item>
+        <item>重症监护科</item>
+    </string-array>
+    <string-array name="array2">
+        <item>中药</item>
+        <item>西药</item>
+    </string-array>
+    <string-array name="select_dialog_items2">
+        <item>心力衰竭</item>
+        <item>心内科护理常规</item>
+        <item>ICU内科</item>
+        <item>脑梗死护理</item>
+        <item>脑梗死医嘱</item>
+    </string-array>
+    <string-array name="operation_bingqing">
+        <item></item>
+        <item>危重</item>
+        <item>病重</item>
+        <item>一般</item>
+    </string-array>
+    <string-array name="operation_geli">
+        <item></item>
+        <item>正常</item>
+        <item>隔离</item>
+        <item>放射</item>
+    </string-array>
+    <string-array name="operation_taidengji">
+        <item></item>
+        <item>特</item>
+        <item>大</item>
+        <item>中</item>
+        <item>小</item>
+    </string-array>
+    <string-array name="operation_shoushushi">
+        <item></item>
+        <item>手术室</item>
+    </string-array>
+    <string-array name="operation_shoushujian">
+        <item></item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <!-- 用血申请 -->
+    <string-array name="blood_xuexing">
+        <item></item>
+        <item>A</item>
+        <item>B</item>
+        <item>AB</item>
+        <item>O</item>
+    </string-array>
+    <string-array name="blood_Rh">
+        <item></item>
+        <item>+</item>
+        <item>-</item>
+    </string-array>
+    <string-array name="blood_com">
+        <item></item>
+        <item>+</item>
+        <item>-</item>
+        <item>？</item>
+    </string-array>
+    <string-array name="blood_unit">
+        <item></item>
+        <item>毫升</item>
+        <item>单位</item>
+        <item>人/份</item>
+    </string-array>
+    
+    
+    <!-- 住院评估使用 -->
+    <string-array name="spinner_cultural">
+        <item></item>
+        <item>博士</item>
+        <item>硕士</item>
+        <item>本科</item>
+        <item>大专</item>
+        <item>高中</item>
+        <item>初中</item>
+        <item>小学</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="spinner_hunyin">
+        <item></item>
+        <item>是</item>
+        <item>否</item> 
+    </string-array>
+    <string-array name="spinner_children">
+        <item></item>
+        <item>有</item>
+        <item>无</item>  
+    </string-array>
+    
+    <!-- 每日评估 -->
+    <!-- 语言障碍弹出的数组 -->
+    <string-array name="yuyanzhangai">
+        <item>说话不完整</item>
+        <item>语无伦次</item>
+        <item>无反应</item>
+        <item>糊涂</item>
+    </string-array>
+    <!-- 神志水平弹出的数组 -->
+    <string-array name= "shenzhishuiping">
+        <item >清醒</item>
+        <item >无定向力</item>
+        <item >不清</item>
+        <item >烦躁</item>
+        <item >嗜睡</item>
+        <item >昏睡</item>
+        <item >浅昏迷</item>
+        <item >中度昏迷</item>
+        <item >深昏迷</item>
+        <item >意识迷糊</item>
+    </string-array>
+    <!-- 运动弹出的数组 -->
+    <string-array name="yundong">
+        <item>正常</item>
+        <item>平衡失调</item>
+        <item>借助工具</item>
+    </string-array>
+    <!-- 握力弹出模块 -->
+    <string-array name="woli">
+        <item>正常</item>
+        <item>弱</item>
+        <item>差</item>
+    </string-array>
+    <!-- 感知弹出的数组 -->
+    <string-array name="ganzhi">
+        <item>正常</item>
+        <item>异常</item>
+        <item>逐渐消失</item>
+    </string-array>
+    <!-- 头晕弹出的数组 -->
+    <string-array name="touyun">
+        <item>周围性</item>
+        <item>中枢性</item>
+        <item>其他</item>
+    </string-array>
+    <!-- 肌力分级弹出的数组 -->
+    <string-array name="jilifenji">
+        <item>0级  完全瘫痪</item>
+        <item>1级  肌肉可收缩，但不能运动，关节不能动</item>
+        <item>2级  肢体能在床上移动，但不能抵抗自身重力</item>
+        <item>3级  肢体能抵抗重力离开床面，但不能抵抗阻力</item>
+        <item>4级  肢体能抵抗重力运动，但未恢复正常</item>
+        <item>5级  正常肌力</item>
+    </string-array>
+    <!-- 抽搐弹出的数组 -->
+    <string-array name="chouchu">
+        <item>正常</item>
+        <item>异常</item>
+        <item>逐渐消失</item>
+    </string-array>
+    <!-- 睁眼反应弹出的数组 -->
+    <string-array name="zhengyanfanying">
+        <item>4 自动睁眼</item>
+        <item>3 呼唤睁眼</item>
+        <item>2 刺痛睁眼</item>
+        <item>1 不睁眼</item>
+    </string-array>
+    <!-- 语言反应弹出的数组 -->
+    <string-array name="yuyanfanying">
+        <item>5 回答正确</item>
+        <item>4 回答有错误</item>
+        <item>3 语无伦次</item>
+        <item>2 只能发音</item>
+        <item>1 不能发音</item>
+    </string-array>
+    <!-- 运动反应弹出的数组 -->
+    <string-array name="yundongfanying">
+        <item>6 按吩咐动作</item>
+        <item>5 刺痛能定位</item>
+        <item>4 刺痛时躲避</item>
+        <item>3 刺痛时屈伸</item>
+        <item>2 刺痛时过伸</item>
+        <item>1 肢体不动</item>
+    </string-array>
+    <!-- 咳嗽弹出的数组 -->
+    <string-array name="kesou">
+        <item>无痰</item>
+        <item>咳痰</item>
+        <item>咳血</item>
+        <item>干咳</item>
+    </string-array>
+    <!-- 痰性状弹出的数组 -->
+    <string-array name="tanxingzhuang">
+        <item>粘液性</item>
+        <item>浆液性</item>
+        <item>粘稠</item>
+        <item>血性</item>
+        <item>痰少</item>
+        <item>痰多</item>
+        <item>恶臭</item>
+        <item>浓性</item>
+    </string-array>
+    <!-- 呼吸困难弹出的数组 -->
+    <string-array name="huxikunnan">
+        <item>突发性</item>
+        <item>劳力性</item>
+        <item>夜间阵发性</item>
+        <item>端坐呼吸</item>
+        <item>呼吸急促</item>
+        <item>活动后</item>
+        <item>休息时</item>
+        <item>其他</item>
+    </string-array>
+    <!-- 心音弹出的数组 -->
+    <string-array name="xinyin">
+        <item>正常</item>
+        <item>伴杂音</item>
+        <item>增强</item>
+        <item>P2  大于   A2</item>
+        <item>P2  小于   A2</item>
+        <item>P2  等于   A2</item>
+        <item>心包摩擦音</item>
+    </string-array>
+    <!-- 心率弹出的数组 -->
+    <string-array name="xinlv">
+        <item>正常</item>
+        <item>不规则</item>
+        <item>次数</item>
+    </string-array>
+    <!-- 脉搏弹出的数组 -->
+    <string-array name="maibo">
+        <item>正常</item>
+        <item>异常</item>
+        <item>次数</item>
+    </string-array>
+    <!-- 水肿弹出的数组 -->
+    <string-array name="shuizhong">
+        <item>双下肢</item>
+        <item>颜面部</item>
+        <item>全身</item>
+        <item>进行性</item>
+        <item>凹陷性</item>
+        <item>Ⅰ级</item>
+        <item>Ⅱ级</item>
+        <item>Ⅲ级</item>
+        <item>其他</item>
+    </string-array>
+    <!-- 循环弹出的数组 -->
+    <string-array name="xunhuan">
+        <item>佳</item>
+        <item>中等</item>
+        <item>差</item>
+    </string-array>
+    <!-- 皮肤黏膜颜色弹出的数组 -->
+    <string-array name="pifunianmoyanse">
+        <item>正常</item>
+        <item>苍白</item>
+        <item>黄染</item>
+        <item>紫绀</item>
+        <item>潮红</item>
+        <item>干燥</item>
+        <item>青紫</item>
+        <item>其他</item>
+    </string-array>
+    <!-- 温度弹出的数组 -->
+    <string-array name="wendu">
+        <item>正常</item>
+        <item>偏高</item>
+        <item>偏低</item>
+    </string-array>
+    <!-- 黏膜弹出的数组 -->
+    <string-array name="nianmo">
+        <item>黏膜不完整</item>
+    </string-array>
+    <!-- 石膏固定弹出的数组 -->
+    <string-array name="shigaoguding">
+        <item>失去弹性</item>
+        <item>部位</item>
+        <item>其他</item>
+    </string-array>
+    <!-- 切口弹出的数组 -->
+    <string-array name="qiekou">
+        <item>换药</item>
+        <item>切口渗液</item>
+        <item>正常</item>
+    </string-array>
+    <!-- 切口渗透性质弹出的数组 -->
+    <string-array name="qiekoushentouxingzhi">
+        <item>血性</item>
+        <item>淡血性</item>
+        <item>脓性</item>
+        <item>异味</item>
+    </string-array>
+    <!-- 切口周围性质弹出的数组 -->
+    <string-array name="qiekouzhouweixingzhi">
+        <item>正常</item>
+        <item>水肿</item>
+        <item>硬肿</item>
+        <item>淡蓝色</item>
+        <item>粉红色</item>
+    </string-array>
+    <!-- 褥疮分期弹出的数组 -->
+    <string-array name="ruchuangfenqi">
+        <item>Ⅰ期</item>
+        <item>Ⅱ期</item>
+        <item>Ⅲ期</item>
+        <item>Ⅳ期</item>
+    </string-array>
+    <!-- 活动方式弹出的数组 -->
+    <string-array name="huodongfangshi">
+        <item>卧床</item>
+        <item>轮椅</item>
+        <item>很少行走</item>	
+        <item>经常行走</item>
+        <item>活动能力</item>
+        <item>完全受限1</item>
+        <item>极限受限2</item>
+        <item>轻度受限3</item>
+        <item>没有受限4</item>
+    </string-array>
+    <!-- 运动辅助弹出的数组 -->
+    <string-array name="yundongfuzhu">
+        <item>手杖</item>
+        <item>拐棍</item>
+        <item>助步器</item>
+        <item>轮椅</item>
+        <item>假肢</item>
+        <item>支架</item>
+        <item>其他</item>
+    </string-array>
+    <!-- 褥疮评分弹出的数组 -->
+    <string-array name="ruchuangpingfen">
+        <item>感知</item>
+        <item>潮湿</item>
+        <item>活动方式</item>
+        <item>活动能力</item>
+        <item>营养</item>
+        <item>摩擦和剪切力</item>
+    </string-array>
+    <!-- 伤口弹出的数组 -->
+    <string-array name="shangkou">
+        <item>清洁伤口</item>
+        <item>污染伤口</item>
+        <item>感染伤口</item>
+    </string-array>
+    <!-- 肠鸣音弹出的数组 -->
+    <string-array name="changmingyin">
+        <item>正常</item>
+        <item>亢进</item>
+        <item>减弱</item>
+        <item>消失</item>
+    </string-array>
+    <!-- 腹部感触弹出的数组 -->
+    <string-array name="fubuganchu">
+        <item>软</item>
+        <item>硬</item>
+    </string-array>
+    <!-- 腹部触痛弹出的数组 -->
+    <string-array name="fubuchutong">
+        <item>上</item>
+        <item>中</item>
+        <item>下</item>
+        <item>左上</item>
+        <item>左下</item>
+        <item>右上</item>
+        <item>右下</item>
+    </string-array>
+    <!-- 腹胀弹出的数组 -->
+    <string-array name="fuzhang">
+        <item>全腹</item>
+        <item>上腹</item>
+        <item>下腹</item>
+        <item>其他</item>
+    </string-array>
+    <!-- 排便弹出的数组 -->
+    <string-array name="paibian">
+        <item>否认问题</item>
+        <item>腹泻</item>
+        <item>造瘘</item>
+        <item>便秘</item>
+        <item>大便失禁</item>
+        <item>辅助排便</item>
+        <item>正常</item>
+        <item>其他</item>
+    </string-array>
+    <!-- 恶心弹出的数组 -->
+    <string-array name="exin">
+        <item>伴腹泻</item>
+        <item>伴眩晕</item>
+        <item>伴呕吐</item>
+        <item>仅恶心</item>
+    </string-array>
+    <!-- 饮食弹出的数组 -->
+    <string-array name="yinshi">
+        <item>普食</item>
+        <item>半流</item>
+        <item>流质</item>
+        <item>禁食</item>
+        <item>其他</item>
+        <item>低盐低脂普食</item>
+    </string-array>
+    <!-- 食欲弹出的数组 -->
+    <string-array name="shiyu">
+        <item>好</item>
+        <item>中</item>
+        <item>差</item>
+    </string-array>
+    <!-- 营养弹出的数组 -->
+    <string-array name="yingyang">
+        <item>否认问题</item>
+        <item>重度肥胖</item>
+        <item>营养不良</item>
+        <item>肛瘘</item>
+        <item>管饲</item>
+        <item>痛风</item>
+        <item>胰腺炎</item>
+        <item>尿毒症</item>
+        <item>糖尿病</item>
+        <item>上消化道出血</item>
+        <item>逆行食道手术</item>
+        <item>执行喉部手术</item>
+        <item>TPN</item>
+        <item>其他</item>
+    </string-array>
+    <!-- 排尿弹出的数组 -->
+    <string-array name="painiao">
+        <item>否认问题</item>
+        <item>夜尿</item>
+        <item>尿频</item>
+        <item>尿痛</item>
+        <item>尿急</item>
+        <item>尿失禁</item>
+        <item>尿潴留</item>
+        <item>淋漓不尽</item>
+        <item>保留导尿</item>
+        <item>耻骨上引流</item>
+        <item>接尿套</item>
+    </string-array>
+    <!-- 小便颜色弹出的数组 -->
+    <string-array name="xiaobianyanse">
+        <item>淡黄</item>
+        <item>浓茶色</item>
+        <item>洗肉水样</item>
+        <item>血性</item>
+        <item>浆酒样</item>
+        <item>浑浊</item>
+        <item>伴有血凝块</item>
+    </string-array>
+    <!-- 安全弹出的数组 -->
+    <string-array name="anquan">
+        <item>床栏使用</item>
+        <item>床位低</item>
+        <item>床边呼叫器</item>	
+        <item>嘱家属加强看护</item>
+        <item>制动措施</item>
+    </string-array>
+    <!-- 跌倒评分弹出的数组 -->
+    <string-array name="diedaopingfen">
+        <item>意识模糊、无定向力</item>
+        <item>近3个月内有3次或以上坠床/跌倒史</item>
+        <item>站立不稳</item>	
+        <item>视物障碍</item>
+        <item>镇静期间</item>
+        <item>体能虚弱</item>
+        <item>诊断为体位性低血压</item>
+        <item>近期有意识丧失、癫痫史</item>
+        <item>大于65岁</item>
+        <item>吸毒或酗酒</item>
+        <item>使用抗高血压药物</item>
+        <item>总分大于3分，病人有坠床或跌倒的高风险，需要采取防范措施</item>
+        <item>头晕</item>
+    </string-array>
+    <!-- 疼痛部位弹出的数组 -->
+    <string-array name="tengtongbuwei">
+        <item>手术部位</item>
+        <item>受伤部位</item>
+        <item>头部</item>	
+        <item>胸部</item>
+        <item>腹部</item>
+        <item>四肢</item>
+        <item>腰部</item>
+        <item>其他</item>
+    </string-array>
+    <!-- 疼痛性质弹出的数组 -->
+    <string-array name="tengtongxingzhi">
+        <item>隐痛</item>
+        <item>刺痛</item>
+        <item>胀痛</item>	
+        <item>刀割样痛</item>
+        <item>牵涉痛</item>
+        <item>绞痛</item>
+        <item>其他</item>
+        <item>其他</item>
+    </string-array>
+    <!-- 疼痛时间弹出的数组 -->
+    <string-array name="tengtongshijian">
+        <item>持续</item>
+        <item>数分钟</item>
+        <item>数小时</item>	
+        <item>偶有</item>
+        <item>活动时</item>
+        <item>咳嗽时</item>
+        <item>阵发性</item>
+    </string-array>
+    <!-- 疼痛评分弹出的数组 -->
+    <string-array name="tengtongpingfen">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>	
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <!-- 疼痛控制弹出的数组 -->
+    <string-array name="tengtongkongzhi">
+        <item>止痛药物</item>
+        <item>止痛针</item>
+        <item>降痛泵</item>	
+        <item>局部冰块冷敷</item>
+        <item>其他</item>
+    </string-array>
+    <!-- 引流管型号弹出的数组 -->
+    <string-array name="yinliuguanxinghao">
+        <item>J  -  P</item>
+        <item>T管</item>
+        <item>腹腔引流管</item>	
+        <item>普通麻醉器</item>
+        <item>脑室引流管10号</item>
+        <item>脑室引流管12号</item>
+        <item>橡胶管</item>
+        <item>胃管</item>
+        <item>胸腔引流管</item>
+        <item>尿管</item>
+        <item>其他</item>
+    </string-array>
+    <!-- 引流管部位弹出的数组 -->
+    <string-array name="yinliuguanbuwei">
+        <item>腹腔</item>
+        <item>胸腔</item>
+        <item>盆腔</item>	
+        <item>颅内</item>
+        <item>硬脑膜外</item>
+        <item>硬脑膜内</item>
+        <item>肾周</item>
+        <item>胃</item>
+        <item>十二指肠</item>
+        <item>脓腔</item>
+        <item>心包</item>
+        <item>胆总管</item>
+        <item>胸壁</item>
+        <item>腋窝</item>
+        <item>皮下</item>
+        <item>腹膜后</item>
+        <item>其他</item>
+        <item>腰部</item>
+        <item>股部</item>
+        <item>膝部</item>
+        <item>取髋骨</item>
+    </string-array>
+    <!-- 引流物弹出的数组 -->
+    <string-array name="yinliuwu">
+        <item>血液性</item>
+        <item>脓性</item>
+        <item>脑积水</item>	
+        <item>胸水</item>
+        <item>腹水</item>
+        <item>胃液</item>
+        <item>胆汁</item>
+        <item>尿液</item>
+        <item>其他</item>
+    </string-array>
+    <!-- 禁食弹出的数组 -->
+    <string-array name="jinshi">
+        <item>是</item>
+        <item>否</item>
+    </string-array>
+    <!-- 麻醉方式弹出的数组 -->
+    <string-array name="mazuifangshi">
+        <item>全身麻醉</item>
+        <item>局部麻醉</item>
+        <item>硬膜外麻醉</item>
+        <item>静吸复合麻醉</item>
+        <item>其他</item>
+    </string-array>
+    <!-- 药物弹出的数组 -->
+    <string-array name="yaowu">
+        <item>有</item>
+        <item>否</item>
+        <item>其他</item>
+    </string-array>
+    
+</resources>

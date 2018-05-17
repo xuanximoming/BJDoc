@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+   
+    <ImageView
+        android:contentDescription="@string/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher" />
+    <LinearLayout 
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+    <TextView
+        android:id="@+id/txtview_wancheng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="10dip"
+        android:textColor="#000000"
+        android:text="下载失败！"
+        android:textSize="15dip"/>
+    <TextView
+        android:id="@+id/show_failedReason"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:textColor="#000000"
+        android:textSize="10dip" />
+  </LinearLayout> 
+   
+
+</LinearLayout>

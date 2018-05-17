@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+ <!--   受血者信息-->
+    <LinearLayout 
+        android:layout_weight="3" 
+        android:orientation="vertical" 
+        android:background="?android:attr/detailsElementBackground" 
+        android:layout_width="match_parent" 
+        android:layout_height="0dp">
+      <LinearLayout  
+          android:layout_width="wrap_content"  
+          android:layout_height="wrap_content">
+          <LinearLayout
+				android:focusable="true"
+				android:focusableInTouchMode="true"
+				android:layout_width="0px"
+				android:layout_height="0px"/>
+          <TextView  
+              android:layout_width="match_parent" 
+              android:layout_height="wrap_content"
+              android:text="受血者信息:"  
+              android:textSize="26dp" 
+			  android:textColor="@+color/darkslateblue" />
+      </LinearLayout>
+      <LinearLayout 
+          android:orientation="horizontal"  
+          android:layout_width="wrap_content"  
+          android:layout_height="wrap_content">
+          <TextView  
+              android:layout_width="match_parent" 
+              android:layout_height="wrap_content"
+              android:text="用血申请单号:"  
+              android:textSize="20dp" 
+              android:layout_marginLeft="20dp"/>
+          <EditText  
+              android:id="@+id/add_blood_main_applynumber" 
+              android:layout_width="130dp" 
+              android:layout_height="wrap_content" 
+              android:inputType="number"/>
+          <TextView  
+              android:layout_width="match_parent" 
+              android:layout_height="wrap_content"
+              android:text="作废"  
+              android:textSize="20dp" 
+              android:layout_marginLeft="700dp"/>
+          <CheckBox  
+              android:id="@+id/add_blood_main_abolish" 
+              android:layout_width="match_parent" 
+              android:layout_height="wrap_content"/>
+      </LinearLayout> 
+      <LinearLayout 
+          android:orientation="horizontal"  
+          android:layout_width="wrap_content"  
+          android:layout_height="wrap_content">
+          <TextView  
+              android:id="@+id/add_blood_main_patientinformation" 
+              android:layout_width="match_parent" 
+              android:layout_height="wrap_content" 
+              android:text="姓名、性别、出生、id号、住院号、费别、申请科室"  
+              android:textSize="20dp" 
+              android:textColor="@+color/tan"  
+              android:layout_marginLeft="20dp"/>
+      </LinearLayout> 
+      <LinearLayout 
+          android:orientation="horizontal"  
+          android:layout_width="wrap_content"  
+          android:layout_height="wrap_content">   
+          <TextView 
+              android:layout_width="match_parent" 
+              android:layout_height="wrap_content" 
+              android:layout_marginLeft="20dp" 
+              android:layout_marginTop="8dp"
+              android:text="血型:"  
+              android:textSize="20dp" 
+              android:textColor="@+color/darkslateblue"/>
+          <Spinner  
+              android:id="@+id/add_blood_main_spinner_xx" 
+              android:layout_width="wrap_content"  
+              android:layout_height="wrap_content"  
+              android:layout_marginTop="8dp"
+              android:entries="@array/blood_xuexing" /> 
+          <TextView 
+              android:layout_width="match_parent" 
+              android:layout_height="wrap_content" 
+              android:layout_marginTop="8dp"
+              android:text="  Rh:"  
+              android:textSize="20dp" 
+              android:textColor="@+color/darkslateblue"/>
+          <Spinner 
+              android:id="@+id/add_blood_main_spinner_rh" 
+              android:layout_width="wrap_content"  
+              android:layout_marginTop="8dp"
+              android:layout_height="wrap_content" 
+              android:entries="@array/blood_Rh" /> 
+          <RadioGroup
+ 				android:layout_width="wrap_content"  
+ 				android:layout_height="wrap_content" 
+ 				android:layout_marginLeft="30dp"
+       		    android:orientation="horizontal"  
+       		    android:checkedButton="@+id/lunch" 
+       		    android:gravity="center"
+                android:id="@+id/add_blood_main_xueyuan" >
+                <TextView
+                   android:text="血源: "   style="@style/textlarge"/>
+               <RadioButton
+            		android:text="血库" android:checked="true" 
+            		android:id="@+id/add_blood_main_xueyuan_1"  style="@style/textlarge" />
+               <RadioButton
+            		android:text="自体" 
+            		android:id="@+id/add_blood_main_xueyuan_2"  style="@style/textlarge" />
+               <RadioButton
+          		    android:text="互助"  
+          		    android:id="@+id/add_blood_main_xueyuan_3" style="@style/textlarge" />         
+          </RadioGroup>
+          <RadioGroup
+ 				android:layout_width="wrap_content"  
+ 				android:layout_height="wrap_content" 
+ 				android:layout_marginLeft="50dp"
+       		    android:orientation="horizontal"  
+       		    android:checkedButton="@+id/lunch" 
+       		    android:gravity="center"
+                android:id="@+id/add_blood_main_shudi" >
+                <TextView
+                   android:text="属地: "   style="@style/textlarge"/>
+               <RadioButton
+            		android:text="市区" 
+            		android:id="@+id/add_blood_main_shudi_1"  style="@style/textlarge" />
+               <RadioButton
+            		android:text="郊县" 
+            		android:id="@+id/add_blood_main_shudi_2"  style="@style/textlarge" />
+               <RadioButton
+          		    android:text="外省市"  
+          		    android:id="@+id/add_blood_main_shudi_3" style="@style/textlarge" />
+               <RadioButton
+            		android:text="港澳台" 
+            		android:id="@+id/add_blood_main_shudi_4"  style="@style/textlarge" />
+               <RadioButton
+          		    android:text="外国人"  
+          		    android:id="@+id/add_blood_main_shudi_5" style="@style/textlarge" />
+           </RadioGroup>
+             
+      </LinearLayout> 
+      <LinearLayout 
+          android:orientation="horizontal"  
+          android:layout_width="wrap_content"  
+          android:layout_height="wrap_content"> 
+            <TextView  
+                android:layout_width="match_parent" 
+                android:layout_height="wrap_content"
+                android:text="诊断及输血适应症:"  
+                android:textSize="20dp" 
+                android:layout_marginLeft="20dp"/>
+            <EditText  
+                android:id="@+id/add_blood_main_diagnoise" 
+                android:layout_width="220dp" 
+                android:layout_height="wrap_content" 
+                android:enabled="false"/>
+            <TextView  
+                android:layout_width="match_parent" 
+                android:layout_height="wrap_content"
+                android:text="输血反应及禁忌症:"  
+                android:textSize="20dp" 
+                android:layout_marginLeft="20dp"/>
+            <EditText  
+                android:id="@+id/add_blood_main_fanying" 
+                android:layout_width="180dp" 
+                android:layout_height="wrap_content"/>
+            <TextView  
+                android:layout_width="match_parent" 
+                android:layout_height="wrap_content"
+                android:text="申请时间:"  
+                android:textSize="20dp" 
+                android:layout_marginLeft="20dp"/>
+            <EditText  
+                android:id="@+id/add_blood_main_applytime" 
+                android:layout_width="200dp" 
+                android:layout_height="wrap_content" 
+                android:enabled="false"/>  
+      </LinearLayout>
+      <LinearLayout 
+          android:orientation="horizontal"  
+          android:layout_width="wrap_content"  
+          android:layout_height="wrap_content">   
+            <TextView  
+                android:layout_width="match_parent" 
+                android:layout_height="wrap_content"
+                android:text="血红蛋白:"  
+                android:textSize="20dp" 
+                android:layout_marginLeft="20dp"/>
+            <EditText  
+                android:id="@+id/add_blood_main_xhdb" 
+                android:layout_width="70dp" 
+                android:layout_height="wrap_content" 
+                android:inputType="number"/>
+            <TextView  
+                android:layout_width="match_parent" 
+                android:layout_height="wrap_content"
+                android:text="g/L"  
+                android:textSize="20dp" />
+            <TextView  
+                android:layout_width="match_parent" 
+                android:layout_height="wrap_content"
+                android:text="血小板:"  
+                android:textSize="20dp" 
+                android:layout_marginLeft="20dp"/>
+            <EditText  
+                android:id="@+id/add_blood_main_xxb" 
+                android:layout_width="70dp" 
+                android:layout_height="wrap_content" 
+                android:inputType="number"/>
+            <TextView  
+                android:layout_width="match_parent" 
+                android:layout_height="wrap_content"
+                android:text="10/L"  
+                android:textSize="20dp" />
+            <TextView  
+                android:layout_width="match_parent" 
+                android:layout_height="wrap_content"
+                android:text="白细胞:"  
+                android:textSize="20dp" 
+                android:layout_marginLeft="20dp"/>
+            <EditText  
+                android:id="@+id/add_blood_main_bxb" 
+                android:layout_width="70dp" 
+                android:layout_height="wrap_content" 
+                android:inputType="number"/>
+            <TextView  
+                android:layout_width="match_parent" 
+                android:layout_height="wrap_content"
+                android:text="10/L"  
+                android:textSize="20dp" />
+            <TextView  
+                android:layout_width="match_parent" 
+                android:layout_height="wrap_content"
+                android:text="HCT:"  
+                android:textSize="20dp" 
+                android:layout_marginLeft="20dp"/>
+            <EditText  
+                android:id="@+id/add_blood_main_hct" 
+                android:layout_width="100dp" 
+                android:layout_height="wrap_content" 
+                android:inputType="numberDecimal"/> 
+            <TextView  
+                android:layout_width="match_parent" 
+                android:layout_height="wrap_content"
+                android:text="ALT:"  
+                android:textSize="20dp" 
+                android:layout_marginLeft="20dp"/>
+            <EditText  
+                android:id="@+id/add_blood_main_alt" 
+                android:layout_width="100dp" 
+                android:layout_height="wrap_content" 
+                android:inputType="numberDecimal"/>
+            <TextView  
+                android:layout_width="match_parent" 
+                android:layout_height="wrap_content"
+                android:text="U/L"  
+                android:textSize="20dp" />          
+      </LinearLayout>
+      <LinearLayout 
+          android:orientation="horizontal"  
+          android:layout_width="wrap_content"  
+          android:layout_height="wrap_content">       
+            <TextView  
+                android:layout_width="match_parent" 
+                android:layout_height="wrap_content"
+                android:text="HBsAg:"  
+                android:textSize="20dp" 
+                android:layout_marginLeft="20dp"/>
+            <Spinner 
+                android:id="@+id/add_blood_main_spinner_hbsag" 
+                android:layout_width="wrap_content"  
+                android:layout_height="wrap_content" 
+                android:entries="@array/blood_Rh" /> 
+            <TextView  
+                android:layout_width="match_parent" 
+                android:layout_height="wrap_content"
+                android:text="Anti-HCV:"  
+                android:textSize="20dp" 
+                android:layout_marginLeft="20dp"/>
+            <Spinner 
+                android:id="@+id/add_blood_main_spinner_antihcv" 
+                android:layout_width="wrap_content"  
+                android:layout_height="wrap_content" 
+                android:entries="@array/blood_Rh" /> 
+            <TextView  
+                android:layout_width="match_parent" 
+                android:layout_height="wrap_content"
+                android:text="Anti-HIV1/2:"  
+                android:textSize="20dp" 
+                android:layout_marginLeft="20dp"/>
+            <Spinner 
+                android:id="@+id/add_blood_main_spinner_antihiv" 
+                android:layout_width="wrap_content"  
+                android:layout_height="wrap_content" 
+                android:entries="@array/blood_Rh" /> 
+          
+            <TextView  
+                android:layout_width="match_parent" 
+                android:layout_height="wrap_content"
+                android:text="梅毒:"  
+                android:textSize="20dp" 
+                android:layout_marginLeft="20dp"/>
+            <Spinner 
+                android:id="@+id/add_blood_main_spinner_meidu" 
+                android:layout_width="wrap_content"  
+                android:layout_height="wrap_content" 
+                android:entries="@array/blood_Rh" /> 
+          
+            <TextView  
+                android:layout_width="match_parent" 
+                android:layout_height="wrap_content"
+                android:text="预输血型:"  
+                android:textSize="20dp" 
+                android:layout_marginLeft="20dp"/> 
+            <Spinner  
+                android:id="@+id/add_blood_main_spinner_yushuxuexing" 
+                android:layout_width="wrap_content"  
+                android:layout_height="wrap_content"   
+                android:entries="@array/blood_xuexing" />   
+            <TextView  
+                android:layout_width="match_parent" 
+                android:layout_height="wrap_content"
+                android:text="辐照血:"  
+                android:textSize="20dp" 
+                android:layout_marginLeft="20dp"/>
+            <EditText  
+                android:id="@+id/add_blood_main_fuzhaoxue" 
+                android:layout_width="100dp" 
+                android:layout_height="wrap_content"/>      
+      </LinearLayout>
+      <LinearLayout 
+          android:orientation="horizontal"  
+          android:layout_width="wrap_content"  
+          android:layout_height="wrap_content">   
+             <Button 
+                 android:id="@+id/add_blood_main_btzhuren"  
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:text="主任:"
+                 android:layout_marginLeft="550dp"
+                 android:textSize="20dp"/>
+            <EditText  
+                android:id="@+id/add_blood_main_zhuren" 
+                android:layout_width="100dp" 
+                android:layout_height="wrap_content" 
+                android:enabled="false"/>
+            <Button 
+                android:id="@+id/add_blood_main_btzhuzhi"  
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="主治:"
+                android:textSize="20dp"/>
+            <EditText  
+                android:id="@+id/add_blood_main_zhuzhi" 
+                android:layout_width="100dp" 
+                android:layout_height="wrap_content" 
+                android:enabled="false"/>
+            <TextView  
+                android:layout_width="match_parent" 
+                android:layout_height="wrap_content"
+                android:text="医生:"  
+                android:textSize="20dp" 
+                android:layout_marginLeft="20dp"/>
+            <EditText  
+                android:id="@+id/add_blood_main_doctor" 
+                android:layout_width="100dp" 
+                android:layout_height="wrap_content" 
+                android:enabled="false" />
+
+      </LinearLayout>
+      
+    </LinearLayout>
+ <!--   申请血液信息-->
+    <LinearLayout 
+        android:layout_weight="2" 
+        android:orientation="vertical"  
+        android:layout_width="match_parent" 
+        android:layout_height="0dp">
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="申请血液信息:"
+             android:textColor="@+color/darkslateblue"
+             android:textSize="26dp" />
+
+          <include layout="@layout/fragment_add_blood_listview_item"  /> 
+          <ListView  android:id="@+id/add_blood_main_list"
+               	    android:layout_width="match_parent"
+                	android:layout_height="wrap_content"
+               	 	android:clipToPadding="false"
+                	android:scrollbarStyle="@integer/preference_screen_header_scrollbarStyle"
+                	android:drawSelectorOnTop="false"
+                	android:cacheColorHint="@android:color/transparent"
+                	android:listPreferredItemHeight="48dp"
+                	android:scrollbarAlwaysDrawVerticalTrack="true" 
+                	style="@style/Widget.Holo.ListView"/> 
+        
+    </LinearLayout>
+</LinearLayout>

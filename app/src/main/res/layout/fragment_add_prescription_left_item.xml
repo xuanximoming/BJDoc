@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2006 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<!-- Layout of a header item in PreferenceActivity. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="48dp"
+    android:background="?android:attr/activatedBackgroundIndicator"
+    android:gravity="center_vertical"
+    android:paddingRight="?android:attr/scrollbarSize"
+    android:padding="2dp" >
+  
+        <TextView
+            android:id="@+id/add_prescription_left_item_tev_1"
+            style="@style/textsmall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:text="测试1"
+            android:textColor="@color/cornflowerblue" 
+            android:layout_weight="1"
+            android:visibility="gone" />
+        
+        <View
+         	android:id="@+id/listview_divider"
+        	android:layout_width="2dip"
+        	android:layout_height="match_parent"
+        	android:layout_marginLeft="2dp"
+        	android:layout_marginRight="2dp"
+        	android:background="@drawable/main_list_divder" />
+       
+        <TextView
+            android:id="@+id/add_prescription_left_item_tev_2"
+            style="@style/textsmall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:text="测试1"
+            android:layout_weight="2" />
+
+        <View
+        	android:id="@+id/listview_divider"
+        	android:layout_width="2dip"
+        	android:layout_height="match_parent"
+        	android:layout_marginLeft="2dp"
+        	android:layout_marginRight="2dp"
+        	android:background="@drawable/main_list_divder" />
+       
+        <TextView 
+            android:id="@+id/add_prescription_left_item_tev_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal" 
+            android:text="测试1"
+            style="@style/textsmall"
+            android:layout_weight="2"/>
+        
+        <View
+        	android:id="@+id/listview_divider"
+        	android:layout_width="2dip"
+        	android:layout_height="match_parent"
+        	android:layout_marginLeft="2dp"
+        	android:layout_marginRight="2dp"
+        	android:background="@drawable/main_list_divder" />
+       
+        <TextView 
+            android:id="@+id/add_prescription_left_item_tev_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/textsmall"
+            android:gravity="center"
+            android:minHeight="?android:attr/listPreferredItemHeightSmall"
+            android:hint="剂量"
+            android:inputType="numberDecimal"
+            android:layout_weight="1.5"
+            android:clickable="true"/>
+
+        <View
+        	android:id="@+id/listview_divider"
+        	android:layout_width="2dip"
+        	android:layout_height="match_parent"
+        	android:layout_marginLeft="2dp"
+        	android:layout_marginRight="2dp"
+        	android:background="@drawable/main_list_divder" />
+       
+        <TextView android:id="@+id/add_prescription_left_item_tev_5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal" 
+            android:text="测试1"
+            style="@style/textsmall"
+            android:layout_weight="1"/>
+
+        <View
+        	android:id="@+id/listview_divider"
+        	android:layout_width="2dip"
+        	android:layout_height="match_parent"
+        	android:layout_marginLeft="2dp"
+        	android:layout_marginRight="2dp"
+        	android:background="@drawable/main_list_divder" />
+       
+        <TextView 
+            android:id="@+id/add_prescription_left_item_tev_6"
+            style="@style/textsmall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:layout_weight="2"
+            android:clickable="true"/>
+       <View
+        	android:id="@+id/listview_divider"
+        	android:layout_width="2dip"
+        	android:layout_height="match_parent"
+        	android:layout_marginLeft="2dp"
+        	android:layout_marginRight="2dp"
+        	android:background="@drawable/main_list_divder" />
+       
+        <TextView 
+            android:id="@+id/add_prescription_left_item_tev_7"
+            style="@style/textsmall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:layout_weight="2"
+            android:clickable="true"/>
+
+        <View
+        	android:id="@+id/listview_divider"
+        	android:layout_width="2dip"
+        	android:layout_height="match_parent"
+        	android:layout_marginLeft="2dp"
+        	android:layout_marginRight="2dp"
+        	android:background="@drawable/main_list_divder" />
+       
+        <TextView 
+            android:id="@+id/add_prescription_left_item_tev_8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/textsmall"
+            android:minHeight="?android:attr/listPreferredItemHeightSmall"
+            android:hint="总量"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:layout_weight="1.5"
+            android:clickable="true"/>
+
+      	<View
+        	android:id="@+id/listview_divider"
+        	android:layout_width="2dip"
+        	android:layout_height="match_parent"
+        	android:layout_marginLeft="2dp"
+        	android:layout_marginRight="2dp"
+        	android:background="@drawable/main_list_divder" />
+       
+        <TextView
+            android:id="@+id/add_prescription_left_item_tev_9"
+            style="@style/textsmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:text="测试1"
+            android:layout_weight="1" />
+
+       <View
+        	android:id="@+id/listview_divider"
+       	 	android:layout_width="2dip"
+       	 	android:layout_height="match_parent"
+        	android:layout_marginLeft="2dp"
+        	android:layout_marginRight="2dp"
+        	android:background="@drawable/main_list_divder" />
+
+        <TextView
+            android:id="@+id/add_prescription_left_item_tev_10"
+            style="@style/textsmall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:text="测试1"
+            android:layout_weight="1"/>
+
+        <View
+        	android:id="@+id/listview_divider"
+        	android:layout_width="2dip"
+        	android:layout_height="match_parent"
+        	android:layout_marginLeft="2dp"
+        	android:layout_marginRight="2dp"
+        	android:background="@drawable/main_list_divder" />   
+
+        <TextView
+            android:id="@+id/add_prescription_left_item_tev_11"
+            style="@style/textsmall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:text="测试1"
+            android:layout_weight="1"/>
+</LinearLayout>

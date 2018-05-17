@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@drawable/space_divder"
+    android:showDividers="middle"
+    android:padding="8dp"
+    >
+    
+    <TextView
+        android:id="@+id/StudyID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:text="检查编号："
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="检查日期："
+        android:textSize="18sp"
+        android:id="@+id/StudyDateTime"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="检查描述："
+        android:textSize="18sp"
+        android:id="@+id/StudyDescription"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="序  列  数："
+        android:textSize="18sp"
+        android:id="@+id/NumberOfSeries"
+        />
+    
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:id="@+id/image"
+        android:visibility="gone"
+        />
+
+</LinearLayout>

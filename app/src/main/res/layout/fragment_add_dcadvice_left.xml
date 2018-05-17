@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <LinearLayout 
+        android:id="@+id/radiolayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+                  >
+       <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:checkedButton="@+id/lunch"
+        android:gravity="center"
+        android:id="@+id/menu">
+        
+        <TextView
+            android:text="时间:"
+            android:id="@+id/choice"
+            style="@style/textlarge"
+             />
+        <RadioButton
+            android:text="长期"
+            android:id="@+id/add_dcadvice_but_longtime"
+            android:checked="true"
+            style="@style/textlarge"
+            />
+        <RadioButton
+            android:text="临时"
+            style="@style/textlarge"
+            android:id="@+id/add_dcadvice_but_shorttime" />
+        </RadioGroup>
+        <RadioGroup
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="vertical"
+        	android:checkedButton="@+id/lunch"
+        	android:gravity="center"
+        	android:id="@+id/menu">
+        <TextView
+            android:text="类别:"
+            style="@style/textlarge"
+            android:id="@+id/choice" />
+        <RadioButton
+            android:text="药    品"
+            style="@style/textlarge"
+            android:checked="true"
+            android:id="@+id/add_dcadvice_but_drug"
+            />
+        <RadioButton
+            android:text="非药品"
+            style="@style/textlarge"
+            android:id="@+id/add_dcadvice_but_nondrug" />      
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout 
+        android:orientation="vertical" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content">
+        <LinearLayout 
+            android:orientation="horizontal" 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/main_patient_info_tev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                android:paddingLeft="?android:attr/listPreferredItemPaddingLeft"
+                android:paddingRight="?android:attr/listPreferredItemPaddingRight"
+                android:text="      自       ："
+                android:textAppearance="?android:attr/textAppearanceListItemSmall" />
+            <Spinner 
+                android:id="@+id/add_dcadvice_spinner_zi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                android:entries="@array/spinner_zi"
+            />
+        </LinearLayout>
+        <LinearLayout 
+            android:focusable="true" 
+            android:focusableInTouchMode="true" 
+            android:orientation="horizontal" 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/main_patient_info_tev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                android:paddingLeft="?android:attr/listPreferredItemPaddingLeft"
+                android:paddingRight="?android:attr/listPreferredItemPaddingRight"
+                android:text="医生说明："
+                android:textAppearance="?android:attr/textAppearanceListItemSmall" />
+            <EditText android:id="@+id/add_dcadvice_edit_instrution"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                android:minHeight="?android:attr/listPreferredItemHeightSmall"
+            />
+        </LinearLayout>
+        <LinearLayout 
+            android:orientation="horizontal" 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/main_patient_info_tev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                android:paddingLeft="?android:attr/listPreferredItemPaddingLeft"
+                android:paddingRight="?android:attr/listPreferredItemPaddingRight"
+                android:text="医嘱内容："
+                android:textAppearance="?android:attr/textAppearanceListItemSmall" />
+            <TextView android:id="@+id/add_dcadvice_tev_info"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                android:minHeight="?android:attr/listPreferredItemHeightSmall"
+            />
+        </LinearLayout>
+     </LinearLayout>
+     <LinearLayout 
+         android:focusable="true" 
+         android:id="@+id/hidelayout1" 
+         android:orientation="vertical" 
+         android:layout_width="fill_parent" 
+         android:layout_height="wrap_content">
+
+          <LinearLayout  
+              android:orientation="horizontal" 
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/main_patient_info_tev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                android:paddingLeft="?android:attr/listPreferredItemPaddingLeft"
+                android:paddingRight="?android:attr/listPreferredItemPaddingRight"
+                android:text="剂         量："
+                android:textAppearance="?android:attr/textAppearanceListItemSmall" />
+            <EditText android:id="@+id/add_dcadvice_edit_dosage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                android:minHeight="?android:attr/listPreferredItemHeightSmall"
+            />
+          </LinearLayout>
+          <LinearLayout 
+              android:id="@+id/dosage_units_layout" 
+              android:orientation="horizontal" 
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/main_patient_info_tev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                android:paddingLeft="?android:attr/listPreferredItemPaddingLeft"
+                android:paddingRight="?android:attr/listPreferredItemPaddingRight"
+                android:text="单         位："
+                android:textAppearance="?android:attr/textAppearanceListItemSmall" />
+            <TextView
+                android:id="@+id/add_dcadvice_tev_dosage_units"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                android:minHeight="?android:attr/listPreferredItemHeightSmall"
+            />
+          </LinearLayout>
+          <LinearLayout 
+              android:id="@+id/administration_layout" 
+              android:orientation="horizontal" 
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/main_patient_info_tev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                android:paddingLeft="?android:attr/listPreferredItemPaddingLeft"
+                android:paddingRight="?android:attr/listPreferredItemPaddingRight"
+                android:text="途         径："
+                android:textAppearance="?android:attr/textAppearanceListItemSmall" />
+            <Spinner android:id="@+id/add_dcadvice_spinner_administration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                android:entries="@array/spinner_zi"
+            />
+          </LinearLayout>         
+     </LinearLayout>
+     <LinearLayout 
+         android:id="@+id/hidelayout2" 
+         android:orientation="vertical" 
+         android:layout_width="fill_parent" 
+         android:layout_height="wrap_content">
+            <LinearLayout 
+                android:orientation="horizontal" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/main_patient_info_tev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                android:paddingLeft="?android:attr/listPreferredItemPaddingLeft"
+                android:paddingRight="?android:attr/listPreferredItemPaddingRight"
+                android:text="频         次："
+                android:textAppearance="?android:attr/textAppearanceListItemSmall" />
+            <Spinner android:id="@+id/add_dcadvice_spinner_frequency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                android:entries="@array/spinner_zi"
+            />
+           </LinearLayout>
+         
+           <LinearLayout 
+                android:orientation="horizontal" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/main_patient_info_tev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                android:paddingLeft="?android:attr/listPreferredItemPaddingLeft"
+                android:paddingRight="?android:attr/listPreferredItemPaddingRight"
+                android:text="时         间："
+                android:textAppearance="?android:attr/textAppearanceListItemSmall" />
+            <EditText 
+                android:id="@+id/add_dcadvice_tev_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                android:minHeight="?android:attr/listPreferredItemHeightSmall"
+            />
+           </LinearLayout>
+           
+          </LinearLayout>
+          <CheckBox 
+                android:id="@+id/add_dcadvice_checkbox_sub"
+           		android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:minHeight="?android:attr/listPreferredItemHeightSmall"
+            	android:text="设为子医嘱"
+            	android:layout_marginLeft="5dp"
+            	android:textAppearance="?android:attr/textAppearanceListItemSmall"/>
+</LinearLayout>
+</ScrollView>
